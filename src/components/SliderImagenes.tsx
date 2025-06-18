@@ -1,46 +1,54 @@
+import type { ImageOverlayGalleryProps } from "@/types";
 import { useSliderImagenes } from "@/hooks/SliderImagenes";
 import { IoClose } from "react-icons/io5";
-import type { ImageOverlayGalleryProps } from "@/types";
+import Carrusel from "@/components/Carrusel";
 
+export default function SliderImagenes({ images, styles }: ImageOverlayGalleryProps) {
+    const {
+        selectedImage,
+        handleImageSelected,
+        closeOverlay,
+        setCurrentIndex,
+    } = useSliderImagenes();
 
-export default function SliderImagenes({ images, clases }: ImageOverlayGalleryProps) {
-    const { selectedImage, handleImageSelected, isClosing, closeOverlay } = useSliderImagenes();
+    if (!images || images.length === 0) return null;
+
+    console.log(images);
+    console.log(selectedImage);
 
     return (
         <>
-            {/* Galería */}
-            <div className={`grid  ${images.length > 0 ? "md:grid-cols-1" : images.length > 1 ? "md:grid-cols-2" : "md:grid-cols-3"} gap-4 md:gap- h-full`}>
-                {images.map((img, index) => (
-                    <img
-                        key={index}
-                        src={img}
-                        alt={`Imagen ${index + 1}`}
-                        onClick={() => handleImageSelected(img)}
-                        className={` ${clases !== "" ? clases : ""} cursor-pointer rounded shadow `}
-                    />
-                ))}
-            </div>
+            {/* Miniatura inicial */}
+            <img
+                src={images[0]}
+                alt="Imagen principal"
+                onClick={() => {
+                    setCurrentIndex(0);
+                    handleImageSelected(images[0], 0);
+                }}
+                className={`h-auto max-w-full rounded-lg object-cover object-center ${styles ?? ""}`}
+            />
 
             {selectedImage && (
-                <div className="fixed inset-0 h-screen w-screen bg-black/80 z-50 flex items-center justify-center">
+                <div className="fixed inset-0 h-screen w-screen bg-black/90 z-50 flex items-center justify-center p-4">
+                    {/* Botón cerrar */}
                     <button
                         onClick={closeOverlay}
-                        className="absolute top-5 right-5 m-2 text-white text-3xl font-bold z-50"
+                        className="absolute top-12 right-12 text-white text-4xl z-50"
+                        title="Cerrar"
                     >
-                        <IoClose className="xl:size-16" />
+                        <IoClose className="xl:size-20 lg:size-14 bg-primary rounded-full p-2" />
                     </button>
-                    <div
-                        className={`relative ${isClosing ? "animate-slide-out" : "animate-slide-in"}`}
-                    >
-                        <img
-                            src={selectedImage}
-                            alt="Vista ampliada"
-                            className="max-w-full rounded-lg shadow-lg"
-                        />
-                    </div>
-                </div>
-            )}
 
+                    {/* Carrusel */}
+                    <div className="w-full max-w-2/5  rounded-lg shadow-lg">
+                        <Carrusel images={images} />
+                    </div >
+                </div >
+            )
+            }
         </>
     );
 }
+
+
