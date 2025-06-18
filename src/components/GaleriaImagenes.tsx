@@ -13,15 +13,15 @@ function chunkArray<T>(array: T[], size: number): T[][] {
 
 export default function GaleriaAltares() {
     // Aplanar todas las imágenes con referencia a su altar
-    const imagenesConAltar = ALTARESJSON.flatMap((altar) =>
-        altar.imagenes.map((img) => ({ altar, img }))
-    );
+    const imagenesConAltar = ALTARESJSON
+        .filter((altar) => altar.imagenes.length > 0) // opcional, evitar errores
+        .map((altar) => ({ altar, img: altar.imagenes[0] }));
 
     // Dividir en grupos de 4 para cada columna
     const chunked = chunkArray(imagenesConAltar, 4);
 
     return (
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 max-w-11/12">
             {chunked.map((grupo, groupIndex) => (
                 <div key={groupIndex} className="grid gap-8">
                     {grupo.map((altar, index) => {
