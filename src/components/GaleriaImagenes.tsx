@@ -40,7 +40,7 @@ export default function GaleriaAltares() {
                                     delay: index * 0.1,
                                 }}
                                 viewport={{ once: true, amount: 0.3 }}
-                                className={`w-full rounded-lg overflow-hidden ${heightClass} bg-blue-400`}
+                                className={`w-full rounded-lg overflow-hidden ${heightClass} `}
                             >
 
                                 <SliderImagenes images={altar.altar.imagenes} styles="h-full w-full" />
