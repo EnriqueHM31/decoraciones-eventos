@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export const useModalEventos = () => {
     const [visible, setVisible] = useState(false);
+    const [isOpenMenuBurguer, setIsOpenMenuBurguer] = useState(false);
+
 
     const handleViewEventos = () => {
         setVisible(true);
@@ -11,9 +13,17 @@ export const useModalEventos = () => {
         setVisible(false);
     }
 
+    const handleClickOpenMenuBurguer = () => {
+        setIsOpenMenuBurguer(!isOpenMenuBurguer);
+    }
+
+
     return {
         visible,
         handleViewEventos,
-        handleNotViewEventos
+        handleNotViewEventos,
+        isOpenMenuBurguer,
+        handleClickOpenMenuBurguer,
+
     }
 }
