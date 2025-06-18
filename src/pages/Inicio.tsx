@@ -34,7 +34,7 @@ export default function Inicio() {
                     </div>
                     <picture className="flex-1 h-full">
 
-                        <SliderImagenes images={[IMAGENEVENTO]} clases="w-full h-full object-cover object-right" />
+                        <SliderImagenes images={[IMAGENEVENTO]} styles="w-full h-full object-cover object-right" />
                     </picture>
                 </section>
             </div>
