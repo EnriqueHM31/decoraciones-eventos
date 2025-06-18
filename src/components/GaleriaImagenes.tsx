@@ -21,9 +21,9 @@ export default function GaleriaAltares() {
     const chunked = chunkArray(imagenesConAltar, 4);
 
     return (
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4 max-w-10/12">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {chunked.map((grupo, groupIndex) => (
-                <div key={groupIndex} className="grid gap-4">
+                <div key={groupIndex} className="grid gap-8">
                     {grupo.map((altar, index) => {
                         const isEvenGroup = groupIndex % 2 === 0;
                         const use20vh = (index % 2 === 0 && isEvenGroup) || (index % 2 !== 0 && !isEvenGroup);
@@ -40,13 +40,29 @@ export default function GaleriaAltares() {
                                     delay: index * 0.1,
                                 }}
                                 viewport={{ once: true, amount: 0.3 }}
-                                className={`w-full rounded-lg overflow-hidden ${heightClass} `}
+                                className={`w-full rounded-lg overflow-hidden ${heightClass}`}
                             >
-
                                 <SliderImagenes images={altar.altar.imagenes} styles="h-full w-full" />
                             </motion.div>
                         );
                     })}
+
+                    {/* Rellenar con placeholders invisibles si faltan imágenes en este grupo */}
+                    {grupo.length < 4 &&
+                        Array.from({ length: 4 - grupo.length }).map((_, i) => {
+                            // Continuar el patrón alternante en la columna
+                            const index = grupo.length + i;
+                            const isEvenGroup = groupIndex % 2 === 0;
+                            const use20vh = (index % 2 === 0 && isEvenGroup) || (index % 2 !== 0 && !isEvenGroup);
+                            const heightClass = use20vh ? "h-[20vh]" : "h-[60vh]";
+
+                            return (
+                                <div
+                                    key={`placeholder-${i}`}
+                                    className={`w-full rounded-lg opacity-0 pointer-events-none ${heightClass}`}
+                                />
+                            );
+                        })}
                 </div>
             ))}
         </div>
