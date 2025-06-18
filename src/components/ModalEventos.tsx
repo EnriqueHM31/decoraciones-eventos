@@ -1,14 +1,8 @@
-import IMAGENEVENTO from "@/assets/img/fondo.jpg";
+import { SECCIONES_EVENTOS } from "@/assets/ts/constantes";
 import { IoClose } from "react-icons/io5"
 
 
 export default function ModalEventos({ onClose }: { onClose: () => void }) {
-
-    const secciones = [
-        { label: "Altares", img: IMAGENEVENTO, to: "/altares" },
-        { label: "Áreas principales", img: IMAGENEVENTO, to: "/areas" },
-        { label: "Eventos", img: IMAGENEVENTO, to: "/eventos" },
-    ];
 
     return (
         <>
@@ -19,7 +13,7 @@ export default function ModalEventos({ onClose }: { onClose: () => void }) {
                     <h2 className="xl:text-xl text-lg font-bold text-center mt-4">Selecciona un tipo de evento</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {secciones.map((seccion, index) => (
+                        {SECCIONES_EVENTOS.map((seccion, index) => (
                             <a
                                 key={index}
                                 href={seccion.to}
