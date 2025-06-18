@@ -1,14 +1,11 @@
-import IMAGEN404 from "@/assets/img/404.png";
-import { useNavigate } from "react-router-dom";
+import IMAGEN404 from "@/assets/img/404.webp";
+import { useNavegaciones } from "@/hooks/Navigate";
+
 
 export default function Error404() {
 
+    const { goHome } = useNavegaciones();
 
-    const navigate = useNavigate();
-
-    const goHome = () => {
-        navigate("/");
-    }
     return (
         <>
 
