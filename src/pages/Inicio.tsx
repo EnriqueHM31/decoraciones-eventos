@@ -1,24 +1,16 @@
 import Navegacion from "@/components/Navegacion";
-import IMAGENEVENTO from "@/assets/img/fondo.jpg";
-import { useState } from "react";
+import IMAGENEVENTO from "@/assets/img/Hero.webp";
 import ModalEventos from "@/components/ModalEventos";
+import { useModalEventos } from "@/hooks/ModalEventos";
 
 export default function Inicio() {
 
-    const [eventos, setEventos] = useState(false);
-
-    const handleViewEventos = () => {
-        setEventos(true);
-    }
-
-    const handleNotViewEventos = () => {
-        setEventos(false);
-    }
+    const { visible, handleViewEventos, handleNotViewEventos } = useModalEventos();
 
     return (
         <>
             {
-                eventos && (
+                visible && (
                     <ModalEventos onClose={handleNotViewEventos} />
                 )
             }
