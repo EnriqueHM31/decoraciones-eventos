@@ -1,17 +1,11 @@
 import { useState } from "react";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { useLocation } from "react-router-dom";
+import { LINKS } from "@/assets/ts/constantes";
 
 
 export default function Navegacion() {
     const [isOpen, setIsOpen] = useState(false);
-
-    const LINKS = [
-        { label: 'Inicio', to: '/' },
-        { label: 'Altares', to: '/altares' },
-        { label: 'Areas Principales', to: '/areas-principales' },
-        { label: 'Eventos', to: '/eventos' },
-    ]
 
     const navigate = useLocation();
 
