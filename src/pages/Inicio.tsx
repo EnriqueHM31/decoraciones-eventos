@@ -2,6 +2,7 @@ import Navegacion from "@/components/Navegacion";
 import IMAGENEVENTO from "@/assets/img/Hero.webp";
 import ModalEventos from "@/components/ModalEventos";
 import { useModalEventos } from "@/hooks/ModalEventos";
+import SliderImagenes from "@/components/SliderImagenes";
 
 export default function Inicio() {
 
@@ -32,7 +33,8 @@ export default function Inicio() {
                         </button>
                     </div>
                     <picture className="flex-1 h-full">
-                        <img src={IMAGENEVENTO} alt="logo" className="w-full h-full object-cover object-right" />
+
+                        <SliderImagenes images={[IMAGENEVENTO]} clases="w-full h-full object-cover object-right" />
                     </picture>
                 </section>
             </div>
