@@ -27,9 +27,9 @@ export default function Footer() {
                                 <img src={IMAGENLOGO} alt="logo" className="size-10 lg:size-14 object-cover" />
                                 <div className="flex flex-col h-full">
 
-                                    <h2 className=" text-md font-bold text-gray-900 dark:text-white">Decoraciones para tus eventos!</h2>
+                                    <h2 className=" text-md font-bold text-white">Decoraciones para tus eventos!</h2>
 
-                                    <p className="mt-1 text-gray-500 dark:text-gray-400 text-sm">
+                                    <p className="mt-1 text-white/50 text-sm">
                                         Huatusco,Veracruz
                                     </p>
                                 </div>
@@ -41,7 +41,7 @@ export default function Footer() {
 
                         <div className=" text-center">
 
-                            <p className=" text-gray-500 dark:text-gray-400 font-bold text-md flex-1 ">
+                            <p className=" text-whitefont-bold text-md flex-1 ">
                                 &copy; {new Date().getFullYear()} Decoraciones para tus eventos.
                             </p>
                         </div>
