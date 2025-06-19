@@ -70,14 +70,23 @@ export default function Navegacion() {
                                 </a>
                             </li>
                         ))}
-                        <li>
+                        <li className="group xl:text-xl px-3 xl:py-1 py-2 hover:-translate-y-2.5 duration-500 transition-all w-full text-center xl:w-fit">
                             <button
-                                className=" text-primary py-1 px-2 rounded-2xl  border border-transparent cursor-pointer text-xs w-fit transition-all duration-500 ease-in-out hover:bg-primary hover:border-white hover:text-white"
+                                className=" text-primary py-1 px-2 rounded-2xl  border border-transparent cursor-pointer text-md w-full lg:w-fit transition-all duration-500 ease-in-out hover:bg-primary lg:hover:border-white lg:hover:text-white"
                                 title="Ver Eventos"
                                 aria-label="Ver Eventos"
                                 onClick={handleClickFormulario}
                             >
-                                <FaRegComments className="lg:size-7 text-white" />
+
+                                <FaRegComments className="lg:size-7 text-white lg:flex hidden" />
+
+                                <p className="text-white lg:hidden">
+                                    Enviar un comentario
+                                    <span
+                                        className={`absolute bottom-0 left-0 h-[2px] w-full bg-white scale-x-0 origin-right transition-transform duration-500 group-hover:scale-x-100 group-hover:origin-left
+                                        `}
+                                    ></span>
+                                </p>
                             </button>
                         </li>
                     </ul>
@@ -98,7 +107,7 @@ export default function Navegacion() {
                         )}
                     </button>
                 </nav>
-            </div>
+            </div >
         </>
     );
 }
