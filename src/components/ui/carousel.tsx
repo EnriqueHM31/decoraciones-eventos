@@ -192,6 +192,10 @@ function CarouselPrevious({
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
+      title="Boton para ir al anterior imagen del slider"
+      aria-label="Anterior"
+      aria-labelledby="carousel-title"
+      type="button"
     >
       <ArrowLeft className="size-10" />
       <span className="sr-only">Previous slide</span>
@@ -222,6 +226,10 @@ function CarouselNext({
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
+      title="Boton para ir al siguiente imagen del slider"
+      aria-label="Siguiente"
+      aria-labelledby="carousel-title"
+      type="button"
     >
       <ArrowRight className="size-10" />
       <span className="sr-only">Next slide</span>
