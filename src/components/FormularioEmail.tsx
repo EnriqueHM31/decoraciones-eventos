@@ -9,7 +9,7 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
             <form className=" p-4 rounded-2xl max-w-1/4 w-full bg-primary border border-white relative" onSubmit={(e) => handleSubmit(e)}>
                 <img src={IMAGENLOGO} alt="logo" className="max-w-32 mx-auto" />
-                <h2 className="text-center text-lg font-bold text-gray-600">Enviar un comentario</h2>
+                <h2 className="text-center text-lg font-bold text-white/80">Enviar un comentario</h2>
 
                 <label htmlFor="nombre_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium ">
                     <div className="flex">
