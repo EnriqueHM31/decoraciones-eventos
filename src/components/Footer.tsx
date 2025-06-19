@@ -20,10 +20,10 @@ export default function Footer() {
             <footer className="bg-primary w-full py-5">
                 <div className="flex flex-col items-center justify-between max-w-11/12 mx-auto">
 
-                    <div className="flex w-full items-center justify-between">
+                    <div className="flex flex-col lg:flex-row w-full items-center justify-between gap-5 lg:gap-0">
 
-                        <section className="flex flex-col  h-full ">
-                            <div className="flex  items-center gap-3 justify-between h-full">
+                        <section className="flex flex-col h-full ">
+                            <div className="flex items-center gap-3 justify-between h-full">
                                 <img src={IMAGENLOGO} alt="logo" className="size-10 lg:size-14 object-cover" />
                                 <div className="flex flex-col h-full">
 
@@ -39,15 +39,15 @@ export default function Footer() {
 
                         </section>
 
-                        <div className=" text-center">
+                        <div className=" text-center order-3 lg:order-2">
 
-                            <p className=" text-white font-bold text-md flex-1 ">
+                            <p className=" text-white font-bold text-xs lg:text-md flex-1 ">
                                 &copy; {new Date().getFullYear()} Decoraciones para tus eventos.
                             </p>
                         </div>
 
-                        <section className="">
-                            <ul className=" flex gap-8 ps-4 justify-end">
+                        <section className="order-2 lg:order-3">
+                            <ul className=" flex gap-8 ps-4 justify-end ">
                                 <li>
                                     <button
                                         onClick={handleClickProximamente}
