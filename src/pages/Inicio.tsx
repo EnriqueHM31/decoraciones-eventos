@@ -28,13 +28,18 @@ export default function Inicio() {
                         <p className="text-black text-sm xl:text-lg">
                             Combinamos telas finas, iluminación ambiental y estructuras personalizadas para lograr un diseño único que refleje tu personalidad y haga de tu evento un recuerdo inolvidable.
                         </p>
-                        <button onClick={handleViewEventos} className="bg-primary px-8 py-3 text-white rounded-2xl w-fit xl:text-md font-bold">
+                        <button onClick={handleViewEventos} className="bg-primary px-8 py-3 text-white rounded-2xl w-fit xl:text-md font-bold"
+                            title="Ver Eventos"
+                            aria-label="Ver Eventos"
+                            aria-labelledby="eventos-title"
+                            type="button"
+                        >
                             Ver Eventos
                         </button>
                     </div>
                     <picture className="flex-1 h-full">
 
-                        <SliderImagenes images={[IMAGENEVENTO]} styles="w-full h-full object-cover object-right" />
+                        <SliderImagenes index={1} images={[IMAGENEVENTO]} styles="w-full h-full object-cover object-right" />
                     </picture>
                 </section>
             </div>
