@@ -19,7 +19,12 @@ export default function Error404() {
                     <p className="xl:text-sm text-lg xl:text-start text-center">
                         Por favor, vuelve a la página de inicio
                     </p>
-                    <button onClick={goHome} className="bg-primary px-8 py-3 text-white rounded-2xl w-fit xl:text-md font-bold">
+                    <button onClick={goHome} className="bg-primary px-8 py-3 text-white rounded-2xl w-fit xl:text-md font-bold"
+                        title="Volver al Inicio"
+                        aria-label="Volver al Inicio"
+                        aria-labelledby="home-title"
+                        type="button"
+                    >
                         Volver al Inicio
                     </button>
                 </div>
