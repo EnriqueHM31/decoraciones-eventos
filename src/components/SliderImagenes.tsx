@@ -3,7 +3,7 @@ import { useSliderImagenes } from "@/hooks/SliderImagenes";
 import { IoClose } from "react-icons/io5";
 import Carrusel from "@/components/Carrusel";
 
-export default function SliderImagenes({ images, styles }: ImageOverlayGalleryProps) {
+export default function SliderImagenes({ index, images, styles }: ImageOverlayGalleryProps) {
     const {
         selectedImage,
         handleImageSelected,
@@ -24,9 +24,10 @@ export default function SliderImagenes({ images, styles }: ImageOverlayGalleryPr
                     setCurrentIndex(0);
                     handleImageSelected(images[0], 0);
                 }}
-                loading={"lazy"}
+                loading={index > 10 ? "lazy" : "eager"}
+                crossOrigin="anonymous"
+                className={`h-auto w-full aspect-square max-w-full rounded-lg object-cover object-center  ${styles ?? ""} `}
 
-                className={`h-auto w-full aspect-square max-w-full rounded-lg object-cover object-center ${styles ?? ""} `}
             />
 
             {selectedImage && (
