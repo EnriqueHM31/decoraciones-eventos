@@ -15,13 +15,13 @@ export default function Inicio() {
                     <ModalEventos onClose={handleNotViewEventos} />
                 )
             }
-            <div className="grid grid-rows-[auto_1fr] h-screen relative ">
+            <div className=" relative  ">
 
                 <Navegacion />
 
                 <section className="flex xl:flex-row flex-col items-center justify-center gap-6 mx-auto h-full pt-6 xl:pt-0">
                     <div className="flex-1 flex gap-6 flex-col xl:px-16 xl:items-start items-center px-4">
-                        <h1 className="text-black xl:text-5xl lg:text-2xl font-bold text-3xl xl:text-start text-center">Decoraciones y Eventos</h1>
+                        <h1 className="text-black xl:text-5xl lg:text-2xl font-bold text-3xl xl:text-start text-center">Decoraciones para Eventos</h1>
                         <p className="text-black xl:text-lg text-sm">
                             Nos especializamos en decoración con entelado elegante y el uso creativo de series de luces LED para crear ambientes mágicos y sofisticados. Desde bodas y XV años, cuidamos cada detalle para que tu celebración brille con estilo propio.
                         </p>
@@ -37,12 +37,11 @@ export default function Inicio() {
                             Ver Eventos
                         </button>
                     </div>
-                    <picture className="flex-1 h-full">
-
-                        <SliderImagenes index={1} images={[IMAGENEVENTO]} styles="w-full h-full object-cover object-right" />
+                    <picture className="flex-1 h-auto">
+                        <SliderImagenes images={[IMAGENEVENTO]} styles="mt-0 rounded-none" />
                     </picture>
                 </section>
-            </div>
+            </div >
 
         </>
     )
