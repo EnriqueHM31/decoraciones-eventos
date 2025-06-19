@@ -9,7 +9,7 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
             <form className=" p-4 rounded-2xl max-w-1/4 w-full bg-primary border border-white relative" onSubmit={(e) => handleSubmit(e)}>
                 <img src={IMAGENLOGO} alt="logo" className="max-w-32 mx-auto" />
-                <h2 className="text-center text-lg font-bold text-white/80">Enviar un comentario</h2>
+                <h2 className="text-center text-lg font-bold text-black/80 bg-white px-4 py-1 rounded-2xl w-fit mx-auto mb-3">Enviar un comentario</h2>
 
                 <label htmlFor="nombre_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium ">
                     <div className="flex">
@@ -21,7 +21,7 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
                         </span>
                     </div>
 
-                    <input type="text" name="nombre_usuario" id="nombre_usuario" className="block w-full rounded-md  shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border border-white px-3 py-2" placeholder="Nombre" />
+                    <input type="text" name="nombre_usuario" id="nombre_usuario" className="block w-full rounded-md text-white  shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border border-white px-3 py-2" placeholder="Nombre" />
                 </label>
 
                 <label htmlFor="mensaje_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium ">
@@ -34,7 +34,7 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
                         </span>
                     </div>
 
-                    <textarea name="mensaje_usuario" id="mensaje_usuario" rows={3} className="block w-full rounded-md  shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border border-white px-3 py-2" placeholder="Comentario"></textarea>
+                    <textarea name="mensaje_usuario" id="mensaje_usuario" rows={3} className="block w-full rounded-md  shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border border-white px-3 py-2 text-white " placeholder="Comentario"></textarea>
                 </label>
                 <button type="submit" className="bg-white text-primary px-8 py-2 rounded-2xl mt-8 cursor-pointer text-xs mx-auto block">Enviar comentario</button>
 
