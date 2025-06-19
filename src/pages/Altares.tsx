@@ -6,10 +6,8 @@ export default function Altares() {
         <>
             <Navegacion />
 
-            <section className="flex flex-col items-center justify-center gap-8 py-8">
-                <div className="flex flex-col items-center justify-center gap-6 ">
-                    <GaleriaAltares />
-                </div>
+            <section className="flex flex-col items-center justify-center gap-8 py-10 px-2 w-full ">
+                <GaleriaAltares />
             </section>
 
         </>
