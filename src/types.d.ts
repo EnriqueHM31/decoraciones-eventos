@@ -1,7 +1,7 @@
 export interface ImageOverlayGalleryProps {
     images: string[];
     styles?: string;
-    index: number;
+    lazy?: boolean;
 }
 
 export interface AltaresJsonProps {
@@ -9,4 +9,9 @@ export interface AltaresJsonProps {
         id: number;
         imagenes: string[];
     }>;
+}
+
+interface FormularioEmailProps {
+    handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+    handleClickFormulario: () => void;
 }
