@@ -6,10 +6,10 @@ import { IoClose } from "react-icons/io5";
 
 export default function FormularioEmail({ handleSubmit, handleClickFormulario }: FormularioEmailProps) {
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
-            <form className=" p-4 rounded-2xl max-w-1/4 w-full bg-primary border border-white relative" onSubmit={(e) => handleSubmit(e)}>
+        <div className="fixed w-screen h-screen inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
+            <form className=" p-4 rounded-2xl lg:max-w-1/4 w-full bg-primary border border-white relative" onSubmit={(e) => handleSubmit(e)}>
                 <img src={IMAGENLOGO} alt="logo" className="max-w-32 mx-auto" />
-                <h2 className="text-center text-lg font-bold text-black/80 bg-white px-4 py-1 rounded-2xl w-fit mx-auto mb-3">Enviar un comentario</h2>
+                <h2 className="text-center text-md lg:text-lg font-bold text-black/80 bg-white px-4 py-1 rounded-2xl w-fit mx-auto mb-3">Enviar un comentario</h2>
 
                 <label htmlFor="nombre_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium ">
                     <div className="flex">
@@ -43,7 +43,7 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
                     aria-labelledby="modal-title"
                     onClick={handleClickFormulario}
                 >
-                    <IoClose className="xl:size-12 lg:size-14  size-10 bg-primary rounded-full p-2" />
+                    <IoClose className="xl:size-12 lg:size-14  size-12 bg-primary rounded-full p-2" />
                 </button>
             </form >
         </div >
