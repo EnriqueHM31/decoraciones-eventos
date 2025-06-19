@@ -18,7 +18,7 @@ export default function GaleriaAltares() {
     const chunked = chunkArray(imagenesConAltar, 4);
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-4 max-w-11/12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-4 md:max-w-11/12 w-full ">
             {chunked.map((grupo, groupIndex) => (
                 <div key={groupIndex} className="grid gap-8">
                     {grupo.map((altar, index) => {
