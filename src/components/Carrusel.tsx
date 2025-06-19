@@ -30,16 +30,16 @@ export default function SliderImagenes({ images }: Props) {
     return (
         <>
 
-            <Carousel setApi={setApi} className="w-full">
-                <CarouselContent>
+            <Carousel setApi={setApi} className="w-full py-0">
+                <CarouselContent className="py-">
                     {images.map((image, index) => (
                         <CarouselItem key={index}>
-                            <Card>
-                                <CardContent className="">
+                            <Card className="w-full h-full py-0 rounded-lg flex items-center justify-center">
+                                <CardContent className=" px-0 py-0 rounded-lg">
                                     <img
                                         src={image}
                                         alt={`Slide ${index + 1}`}
-                                        className="h-auto max-w-full rounded-lg object-cover object-center"
+                                        className="h-auto max-w-full w-full rounded-lg object-cover object-center"
                                     />
                                 </CardContent>
                             </Card>
@@ -47,11 +47,11 @@ export default function SliderImagenes({ images }: Props) {
                     ))}
                 </CarouselContent>
 
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="md:flex hidden" />
+                <CarouselNext className="md:flex hidden" />
             </Carousel>
 
-            <div className=" absolute bottom-6 left-1/2 flex -translate-x-1/2 text-white text-2xl bg-primary  font-bold px-5 py-2 rounded-full">
+            <div className=" absolute bottom-6 left-1/2 flex -translate-x-1/2 text-white md:text-2xl bg-primary  font-bold px-5 py-2 rounded-full">
                 Slide {current} de {count}
             </div>
         </>

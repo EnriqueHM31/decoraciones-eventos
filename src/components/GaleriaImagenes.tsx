@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { ALTARESJSON } from "@/assets/mooks/altares";
 import SliderImagenes from "@/components/SliderImagenes";
 
-// Función para dividir un arreglo en grupos (chunks) de cierto tamaño
 function chunkArray<T>(array: T[], size: number): T[][] {
     const result: T[][] = [];
     for (let i = 0; i < array.length; i += size) {
@@ -12,28 +11,26 @@ function chunkArray<T>(array: T[], size: number): T[][] {
 }
 
 export default function GaleriaAltares() {
-    // Aplanar todas las imágenes con referencia a su altar
     const imagenesConAltar = ALTARESJSON
-        .filter((altar) => altar.imagenes.length > 0) // opcional, evitar errores
+        .filter((altar) => altar.imagenes.length > 0)
         .map((altar) => ({ altar, img: altar.imagenes[0] }));
 
-    // Dividir en grupos de 4 para cada columna
     const chunked = chunkArray(imagenesConAltar, 4);
 
     return (
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 max-w-11/12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-4 max-w-11/12">
             {chunked.map((grupo, groupIndex) => (
                 <div key={groupIndex} className="grid gap-8">
                     {grupo.map((altar, index) => {
                         const isEvenGroup = groupIndex % 2 === 0;
                         const use20vh = (index % 2 === 0 && isEvenGroup) || (index % 2 !== 0 && !isEvenGroup);
-                        const heightClass = use20vh ? "h-[20vh]" : "h-[60vh]";
+                        const heightClass = use20vh ? "sm:h-[20vh] h-[40vh]" : "sm:h-[60vh] h-[40vh]";
 
                         return (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, scale: 0.9, y: 50 }}
-                                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                                initial={{ opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.5 } }}
+                                whileInView={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.5 } }}
                                 transition={{
                                     duration: 0.5,
                                     ease: "easeOut",
@@ -42,7 +39,7 @@ export default function GaleriaAltares() {
                                 viewport={{ once: true, amount: 0.3 }}
                                 className={`w-full rounded-lg overflow-hidden ${heightClass}`}
                             >
-                                <SliderImagenes images={altar.altar.imagenes} styles="h-full w-full" />
+                                <SliderImagenes index={index} images={altar.altar.imagenes} styles="h-full w-full" />
                             </motion.div>
                         );
                     })}

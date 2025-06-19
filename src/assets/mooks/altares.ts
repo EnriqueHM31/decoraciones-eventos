@@ -170,12 +170,459 @@ export const ALTARESJSON: Altar[] = [
     {
         id: 20,
         imagenes: [
-            ""
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288588/altar20_1_gvzsjw.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar20_2_duuh4u.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar20_3_xltbbz.jpg"
         ]
     },
-
-
-
+    {
+        id: 21,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar21_1_rka6jq.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar21_2_tjyi2t.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar21_3_kt8t7v.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar21_4_mjgxet.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288590/altar21_5_nqahgg.jpg"
+        ]
+    },
+    {
+        id: 22,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288590/altar22_1_nhb3nu.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288591/altar22_2_netpkf.jpg"
+        ]
+    },
+    {
+        id: 23,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288590/altar23_1_nxnrqd.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288591/altar23_2_qa2toa.jpg"
+        ]
+    },
+    {
+        id: 24,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288591/altar24_1_hou000.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288591/altar24_2_zexaz5.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288592/altar24_3_wtxkvj.jpg"
+        ]
+    },
+    {
+        id: 25,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288592/altar25_1_ihwyun.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288592/altar25_2_iq8ory.jpg"
+        ]
+    },
+    {
+        id: 26,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288593/altar26_1_xav1jy.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288593/altar26_2_kmelak.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288593/altar26_3_suyk6w.jpg"
+        ]
+    },
+    {
+        id: 27,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288593/altar27_1_orojlg.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288594/altar27_2_qu85nz.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288593/altar27_3_owl1pt.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288594/altar27_4_sjxylc.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288594/altar27_5_vlnffq.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar27_6_azbpbq.jpg"
+        ]
+    },
+    {
+        id: 28,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288594/altar28_1_qsofnk.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar28_2_f72fko.jpg"
+        ]
+    },
+    {
+        id: 29,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar29_1_umz7zy.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar29_2_zctsbn.jpg"
+        ]
+    },
+    {
+        id: 30,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288596/altar30_1_jknwza.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288596/altar30_2_ts0f4m.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288596/altar30_3_tz4l5a.jpg"
+        ]
+    },
+    {
+        id: 31,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288597/altar31_1_qtvdmm.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288597/altar31_2_kkpln9.jpg"
+        ]
+    },
+    {
+        id: 32,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288597/altar32_1_tzhis4.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288597/altar32_2_nn3xbw.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288597/altar32_3_yrraee.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288598/altar32_4_o3duqf.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288598/altar32_5_ksa9a3.jpg"
+        ]
+    },
+    {
+        id: 33,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288598/altar33_1_sbw3ng.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288598/altar33_2_t5n88m.jpg"
+        ]
+    },
+    {
+        id: 34,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar34_1_p79ufq.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar34_2_pjh4bp.jpg"
+        ]
+    },
+    {
+        id: 35,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar35_1_of3d1p.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar35_2_joc63w.jpg"
+        ]
+    },
+    {
+        id: 36,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar36_1_ti71vx.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288600/altar36_2_qggjhx.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288600/altar36_3_nuqukr.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288601/altar36_4_kw6yel.jpg"
+        ]
+    },
+    {
+        id: 37,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288601/altar37_1_dldxix.jpg"
+        ]
+    },
+    {
+        id: 38,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288601/altar38_1_g2yzmi.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288601/altar38_2_qwvjvp.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288602/altar38_3_yu4vxg.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288602/altar38_4_ltzpoy.jpg"
+        ]
+    },
+    {
+        id: 39,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar39_1_naglch.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar39_2_tf9s7v.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar39_3_pfjm9d.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar39_4_athq97.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar39_5_g4jduz.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar39_6_yaltmj.jpg"
+        ]
+    },
+    {
+        id: 40,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar40_1_q9nhvo.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288604/altar40_2_mriokf.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288604/altar40_3_yz9ky2.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288604/altar40_4_unfkip.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288605/altar40_5_gglgqz.jpg"
+        ]
+    },
+    {
+        id: 41,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288605/altar41_1_jfuqtk.jpg"
+        ]
+    },
+    {
+        id: 42,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288605/altar42_1_cswuw6.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288605/altar42_2_rkpjkg.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288605/altar42_3_gqhr6p.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288606/altar42_4_v2ssmo.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288606/altar42_5_ip86oi.jpg"
+        ]
+    },
+    {
+        id: 43,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar43_1_jcf1yw.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288606/altar43_2_kjskvm.jpg"
+        ]
+    },
+    {
+        id: 44,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar44_1_zqalw7.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar44_2_alxycs.jpg"
+        ]
+    },
+    {
+        id: 45,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar45_1_esgorv.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar45_2_r1d7mb.jpg"
+        ]
+    },
+    {
+        id: 46,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288608/altar46_1_xlaajl.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288608/altar46_2_pp7sgl.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288608/altar46_3_uxfctc.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288609/altar46_4_wfjo0u.jpg"
+        ]
+    },
+    {
+        id: 47,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288609/altar47_1_npqtta.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288609/altar47_2_bcml4d.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288609/altar47_3_pdspwc.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288609/altar47_4_wozh1b.jpg"
+        ]
+    },
+    {
+        id: 48,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar48_1_hl66hh.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar48_2_hptoaa.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar48_3_liz7co.jpg"
+        ]
+    },
+    {
+        id: 49,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar49_1_hy9gov.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar49_2_qyngdu.jpg"
+        ]
+    },
+    {
+        id: 50,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288611/altar50_1_h0tsib.jpg"
+        ]
+    },
+    {
+        id: 51,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288611/altar51_1_hmaxhg.jpg"
+        ]
+    },
+    {
+        id: 52,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288611/altar52_1_suxzo9.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288611/altar52_2_lqrdsu.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288612/altar52_3_g8xa8a.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288612/altar52_4_uxsi4m.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288612/altar52_5_pviun3.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288612/altar52_6_ljctj8.jpg"
+        ]
+    },
+    {
+        id: 53,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288613/altar53_1_njbjxl.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288613/altar53_2_lnkic3.jpg"
+        ]
+    },
+    {
+        id: 54,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288613/altar54_1_sixyoa.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288613/altar54_2_w3vlcf.jpg"
+        ]
+    },
+    {
+        id: 55,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288614/altar55_1_xtxrjs.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288614/altar55_2_ysopbp.jpg"
+        ]
+    },
+    {
+        id: 56,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288614/altar56_1_ueteh3.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar56_2_j0vyz8.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar56_3_fwn8jp.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar56_4_uykpyf.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar56_5_g4cc9j.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar56_6_gwue7g.jpg"
+        ]
+    },
+    {
+        id: 57,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar57_1_uzbiou.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288616/altar57_2_jy2v1g.jpg"
+        ]
+    },
+    {
+        id: 58,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288616/altar58_1_o9uqsq.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288616/altar58_2_qdptzi.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar58_3_xleolx.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288616/altar58_4_gx5wz0.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar58_5_sykrxt.jpg"
+        ]
+    },
+    {
+        id: 59,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar59_1_mnfrus.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar59_2_govgal.jpg"
+        ]
+    },
+    {
+        id: 60,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar60_1_rjmh3r.jpg"
+        ]
+    },
+    {
+        id: 61,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar61_1_oqms5i.jpg",
+        ]
+    },
+    {
+        id: 62,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar62_1_gtz3mr.jpg"
+        ]
+    },
+    {
+        id: 63,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar63_1_tzwqsq.jpg"
+        ]
+    },
+    {
+        id: 64,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar64_1_ivfwjp.jpg"
+        ]
+    },
+    {
+        id: 65,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar65_1_ytnnb4.jpg"
+        ]
+    },
+    {
+        id: 66,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar66_1_q40akh.jpg"
+        ]
+    },
+    {
+        id: 67,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar67_1_jisrts.jpg"
+        ]
+    },
+    {
+        id: 68,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar68_1_e8yotu.jpg"
+        ]
+    },
+    {
+        id: 69,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar69_1_xp7cwi.jpg"
+        ]
+    },
+    {
+        id: 70,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar70_1_pxb2ir.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar70_2_j6gebl.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar70_3_zukafh.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar70_4_otpqte.jpg"
+        ]
+    },
+    {
+        id: 71,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar71_1_wej1bv.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar71_2_hjrqq7.jpg"
+        ]
+    },
+    {
+        id: 72,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar72_1_wm6uen.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar72_2_k7sbpo.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar72_3_dvmlio.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar72_4_lnovpl.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar72_6_xwzfmd.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar72_7_iqikgt.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar72_8_hzqnjt.jpg"
+        ]
+    },
+    {
+        id: 73,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar73_1_xznnll.jpg"
+        ]
+    },
+    {
+        id: 74,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar74_1_xvcvh8.jpg"
+        ]
+    },
+    {
+        id: 75,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar74_1_xvcvh8.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar75_2_ouwo9c.jpg"
+        ]
+    },
+    {
+        id: 76,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar76_1_p9omoe.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar76_2_f6ni4l.jpg"
+        ]
+    },
+    {
+        id: 77,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar77_1_e4jcfw.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar77_2_cymo04.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar77_3_xfx0ps.jpg"
+        ]
+    },
+    {
+        id: 78,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar78_1_rtna3g.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar78_2_yotbyk.jpg"
+        ]
+    },
+    {
+        id: 79,
+        imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar79_2_pljvax.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar79_2_pljvax.jpg"
+        ]
+    }
 
 
 
