@@ -39,6 +39,7 @@ export default function SliderImagenes({ images }: Props) {
                                         src={image}
                                         alt={`Slide ${index + 1}`}
                                         className="h-auto max-w-full w-full rounded-lg object-cover object-center"
+                                        crossOrigin="anonymous"
                                     />
                                 </CardContent>
                             </Card>
