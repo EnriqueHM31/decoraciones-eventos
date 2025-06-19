@@ -34,6 +34,10 @@ export default function ModalEventos({ onClose }: { onClose: () => void }) {
                     <button
                         onClick={onClose}
                         className="size-8 xl:size-10 mx-auto bg-primary text-white hover:bg-blue-700 transition absolute rounded-full top-3 right-3 flex items-center justify-center"
+                        aria-label="Cerrar modal"
+                        title="Cerrar modal"
+                        type="button"
+                        aria-labelledby="modal-title"
                     >
                         <IoClose className="size-4 xl:size-7" />
                     </button>
