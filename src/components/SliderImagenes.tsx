@@ -33,8 +33,11 @@ export default function SliderImagenes({ images, styles }: ImageOverlayGalleryPr
                 <div className="fixed inset-0 h-screen w-screen bg-black/90 z-50 flex items-center justify-center p-4">
                     <button
                         onClick={closeOverlay}
-                        className="absolute top-12 md:right-12 right-8 text-white text-4xl z-50"
+                        className="absolute top-12 md:right-12 right-4 text-white text-4xl z-50"
                         title="Cerrar"
+                        aria-label="Cerrar modal"
+                        aria-labelledby="modal-title"
+                        type="button"
                     >
                         <IoClose className="xl:size-20 lg:size-14  size-10 bg-primary rounded-full p-2" />
                     </button>
