@@ -29,9 +29,8 @@ export default function SliderImagenes({ images }: Props) {
 
     return (
         <>
-
             <Carousel setApi={setApi} className="w-full py-0">
-                <CarouselContent className="py-">
+                <CarouselContent className="py-0">
                     {images.map((image, index) => (
                         <CarouselItem key={index}>
                             <Card className="w-full h-full py-0 rounded-lg flex items-center justify-center">
