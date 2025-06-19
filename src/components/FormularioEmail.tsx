@@ -9,14 +9,14 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
             <form className=" p-4 rounded-2xl max-w-1/4 w-full bg-primary border border-white relative" onSubmit={(e) => handleSubmit(e)}>
                 <img src={IMAGENLOGO} alt="logo" className="max-w-32 mx-auto" />
-                <h2 className="text-center text-lg font-bold text-gray-900 dark:text-white">Enviar un comentario</h2>
+                <h2 className="text-center text-lg font-bold text-gray-600">Enviar un comentario</h2>
 
-                <label htmlFor="nombre_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <label htmlFor="nombre_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium ">
                     <div className="flex">
                         <span className="inline-flex items-center text-sm rounded-s-md bg-primary">
                             <FaUserCircle className="size-6 text-white" />
                         </span>
-                        <span id="nombre_usuario" className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full text-xs 2xl:text-xs p-2.5  dark:placeholder-gray-700 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <span id="nombre_usuario" className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full text-xs 2xl:text-xs p-2.5  placeholder:text-gray-500 text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             Nombre
                         </span>
                     </div>
@@ -24,12 +24,12 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
                     <input type="text" name="nombre_usuario" id="nombre_usuario" className="block w-full rounded-md  shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border border-white px-3 py-2" placeholder="Nombre" />
                 </label>
 
-                <label htmlFor="mensaje_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <label htmlFor="mensaje_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium ">
                     <div className="flex">
                         <span className="inline-flex items-center text-sm rounded-s-md bg-primary">
                             <SiGooglemessages className="size-6 text-white" />
                         </span>
-                        <span id="mensaje_usuario" className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full text-xs 2xl:text-xs p-2.5  dark:placeholder-gray-500 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <span id="mensaje_usuario" className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full text-xs 2xl:text-xs p-2.5  placeholder:text-gray-500 text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             Comentario
                         </span>
                     </div>
