@@ -41,7 +41,7 @@ export default function Footer() {
 
                         <div className=" text-center">
 
-                            <p className=" text-whitefont-bold text-md flex-1 ">
+                            <p className=" text-white font-bold text-md flex-1 ">
                                 &copy; {new Date().getFullYear()} Decoraciones para tus eventos.
                             </p>
                         </div>
