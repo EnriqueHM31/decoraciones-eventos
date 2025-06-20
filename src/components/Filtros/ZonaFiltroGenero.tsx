@@ -1,6 +1,7 @@
 import { useGaleriaStore } from "@/store/useGaleriaStore";
 import { IoMdMan, IoMdWoman } from "react-icons/io";
 import { GiChurch } from "react-icons/gi";
+import { FaUserFriends } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useZonaFiltros } from "@/hooks/ZonaFiltros";
 import type { GeneroProps } from "@/types";
@@ -9,6 +10,7 @@ const iconosGenero = {
     IoMdMan: <IoMdMan className="xl:size-8 lg:size-6 size-6" />,
     IoMdWoman: <IoMdWoman className="xl:size-8 lg:size-6 size-6" />,
     GiChurch: <GiChurch className="xl:size-8 lg:size-6 size-6" />,
+    FaUserFriends: <FaUserFriends className="xl:size-8 lg:size-6 size-6" />,
 };
 
 
