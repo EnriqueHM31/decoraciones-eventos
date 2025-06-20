@@ -31,7 +31,6 @@ export default function Navegacion() {
                         </span>
                     </div>
 
-                    {/* Links de navegación */}
                     <ul
                         className={`items-center justify-between 
                             absolute top-24 xl:top-0 left-1/2 xl:left-0 -translate-x-1/2 xl:translate-none
