@@ -12,7 +12,7 @@ export default function PlaceholdersGrid({ groupIndex, grupo }: PlaceholdersGrid
             return (
                 <div
                     key={`placeholder-${i}`}
-                    className={`w-full rounded-lg opacity-0 pointer-events-none ${heightClass}`}
+                    className={`w-full rounded-lg opacity-0 pointer-events-none bg-amber-200 ${heightClass}`}
                 />
             );
         })
