@@ -8,8 +8,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288623/altar1_1_km62ha.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288624/altar1_2_tecxwm.jpg",
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["rojo", "blanco", "azul"]
 
     },
     {
@@ -20,8 +20,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288624/altar2_3_uncw64.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288624/altar2_4_f2npin.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mujer",
+        colores: ["blanco", "rosa"]
     },
     {
         id: 3,
@@ -30,8 +30,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288574/altar3_2_hnp5gk.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288574/altar3_3_niejbe.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 4,
@@ -39,8 +39,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288574/altar4_1_lzwuao.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288574/altar4_2_meyad9.jpg",
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mixto",
+        colores: ["amarillo", "blanco"]
     },
     {
         id: 5,
@@ -48,8 +48,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288575/altar5_1_eqghal.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288575/altar5_2_ti8fsg.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["amarillo", "blanco"]
     },
     {
         id: 6,
@@ -59,7 +59,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288574/altar6_3_zqqpft.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul rey", "blanco"]
     },
     {
         id: 7,
@@ -68,8 +68,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288576/altar7_2_s73oyp.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288577/altar7_3_s8mwk5.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288576/altar8_2_xs8tz4.jpg",
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul rey", "blanco"]
     },
     {
         id: 9,
@@ -92,7 +92,7 @@ export const ALTARESJSON: Altar[] = [
 
         ],
         genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        colores: ["verde jade", "blanco"]
     },
     {
         id: 10,
@@ -100,16 +100,16 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288579/altar10__kpgacw.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288578/altar10_2_rsgisi.jpg",
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mujer",
+        colores: ["rosa", "blanco"]
     },
     {
         id: 11,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288579/altar11_1_zrtwfw.jpg",
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 12,
@@ -122,7 +122,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288581/altar12_6_nbfzr4.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "blanco"]
     },
     {
         id: 13,
@@ -135,7 +135,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288583/altar13_6_ivecz5.jpg"
         ],
         genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        colores: ["rosa", "rosa pastel", "blanco"]
     },
     {
         id: 14,
@@ -144,7 +144,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288582/altar14_2_cxc9rd.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul cielo", "blanco"]
 
     },
     {
@@ -157,8 +157,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288584/altar15_6_nzitiw.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288585/altar15_7_emqb2a.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Hombre",
+        colores: ["azul", "blanco"]
     },
     {
         id: 16,
@@ -166,7 +166,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288585/altar16_1_njgrx2.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288585/altar16_2_rqpdan.jpg"
         ],
-        genero: "Hombre",
+        genero: "Mujer",
         colores: ["rojo", "blanco"]
     },
     {
@@ -176,7 +176,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288585/altar17_2_nkvbeb.jpg"
         ],
         genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        colores: ["rosa", "rosa pastel", "blanco"]
     },
     {
         id: 18,
@@ -189,8 +189,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288587/altar18_6_pynwxu.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288587/altar18_7_nwc4w1.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mujer",
+        colores: ["lila", "blanco"]
     },
     {
         id: 19,
@@ -201,7 +201,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288588/altar19_4_zpxtcu.jpg"
         ],
         genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        colores: ["palo rosa", "blanco"]
     },
     {
         id: 20,
@@ -210,8 +210,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar20_2_duuh4u.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar20_3_xltbbz.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mujer",
+        colores: ["rosa", "blanco"]
     },
     {
         id: 21,
@@ -222,8 +222,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar21_4_mjgxet.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288590/altar21_5_nqahgg.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 22,
@@ -232,7 +232,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288591/altar22_2_netpkf.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul rey", "blanco"]
     },
     {
         id: 23,
@@ -240,8 +240,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288590/altar23_1_nxnrqd.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288591/altar23_2_qa2toa.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 24,
@@ -251,7 +251,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288592/altar24_3_wtxkvj.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "blanco"]
     },
     {
         id: 25,
@@ -259,8 +259,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288592/altar25_1_ihwyun.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288592/altar25_2_iq8ory.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Hombre",
+        colores: ["azul", "blanco"]
     },
     {
         id: 26,
@@ -270,7 +270,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288593/altar26_3_suyk6w.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "blanco"]
     },
     {
         id: 27,
@@ -282,8 +282,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288594/altar27_5_vlnffq.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar27_6_azbpbq.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mujer",
+        colores: ["rosa", "blanco"]
     },
     {
         id: 28,
@@ -292,7 +292,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar28_2_f72fko.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "blanco"]
     },
     {
         id: 29,
@@ -300,8 +300,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar29_1_umz7zy.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar29_2_zctsbn.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Nixto",
+        colores: ["dorado", "blanco"]
     },
     {
         id: 30,
@@ -310,7 +310,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288596/altar30_2_ts0f4m.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288596/altar30_3_tz4l5a.jpg"
         ],
-        genero: "Hombre",
+        genero: "Mixto",
         colores: ["rojo", "blanco"]
     },
     {
@@ -319,8 +319,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288597/altar31_1_qtvdmm.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288597/altar31_2_kkpln9.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["dorado", "blanco"]
     },
     {
         id: 32,
@@ -331,8 +331,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288598/altar32_4_o3duqf.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288598/altar32_5_ksa9a3.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 33,
@@ -340,8 +340,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288598/altar33_1_sbw3ng.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288598/altar33_2_t5n88m.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 34,
@@ -349,7 +349,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar34_1_p79ufq.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar34_2_pjh4bp.jpg"
         ],
-        genero: "Hombre",
+        genero: "Mixto",
         colores: ["rojo", "blanco"]
     },
     {
@@ -358,8 +358,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar35_1_of3d1p.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288599/altar35_2_joc63w.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["dorado", "blanco", "azul"]
     },
     {
         id: 36,
@@ -370,15 +370,15 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288601/altar36_4_kw6yel.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "blanco"]
     },
     {
         id: 37,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288601/altar37_1_dldxix.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 38,
@@ -389,7 +389,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288602/altar38_4_ltzpoy.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "azul cielo", "blanco"]
     },
     {
         id: 39,
@@ -401,8 +401,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar39_5_g4jduz.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288603/altar39_6_yaltmj.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Hombre",
+        colores: ["negro", "blanco"]
     },
     {
         id: 40,
@@ -413,8 +413,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288604/altar40_4_unfkip.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288605/altar40_5_gglgqz.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mixto",
+        colores: ["rojo", "azul", "blanco"]
     },
     {
         id: 41,
@@ -422,7 +422,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288605/altar41_1_jfuqtk.jpg"
         ],
         genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        colores: ["palo rosa", "blanco"]
     },
     {
         id: 42,
@@ -433,8 +433,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288606/altar42_4_v2ssmo.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288606/altar42_5_ip86oi.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 43,
@@ -442,8 +442,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar43_1_jcf1yw.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288606/altar43_2_kjskvm.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 44,
@@ -451,8 +451,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar44_1_zqalw7.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar44_2_alxycs.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 45,
@@ -460,8 +460,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar45_1_esgorv.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288607/altar45_2_r1d7mb.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 46,
@@ -471,7 +471,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288608/altar46_3_uxfctc.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288609/altar46_4_wfjo0u.jpg"
         ],
-        genero: "Hombre",
+        genero: "Mujer",
         colores: ["rojo", "blanco"]
     },
     {
@@ -483,42 +483,42 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288609/altar47_4_wozh1b.jpg"
         ],
         genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        colores: ["rojo", "blanco"]
     },
     {
         id: 48,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar48_1_hl66hh.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar48_2_hptoaa.jpg",
-            "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar48_3_liz7co.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "azul cielo", "blanco"]
     },
     {
         id: 49,
         imagenes: [
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar48_3_liz7co.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar49_1_hy9gov.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288610/altar49_2_qyngdu.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Hombre",
+        colores: ["azul", "blanco"]
     },
     {
         id: 50,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288611/altar50_1_h0tsib.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mixto",
+        colores: ["amarillo", "blanco"]
     },
     {
         id: 51,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288611/altar51_1_hmaxhg.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["amarillo", "blanco"]
     },
     {
         id: 52,
@@ -531,7 +531,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288612/altar52_6_ljctj8.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "amarillo", "blanco"]
     },
     {
         id: 53,
@@ -539,8 +539,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288613/altar53_1_njbjxl.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288613/altar53_2_lnkic3.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 54,
@@ -548,7 +548,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288613/altar54_1_sixyoa.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288613/altar54_2_w3vlcf.jpg"
         ],
-        genero: "Hombre",
+        genero: "Mixto",
         colores: ["rojo", "blanco"]
     },
     {
@@ -557,8 +557,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288614/altar55_1_xtxrjs.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288614/altar55_2_ysopbp.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Hombre",
+        colores: ["zul rey", "blanco"]
     },
     {
         id: 56,
@@ -570,8 +570,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar56_5_g4cc9j.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar56_6_gwue7g.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mujer",
+        colores: ["rosa", "rosa pastel", "blanco"]
     },
     {
         id: 57,
@@ -579,8 +579,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar57_1_uzbiou.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288616/altar57_2_jy2v1g.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Hombre",
+        colores: ["azul cielo", "blanco"]
     },
     {
         id: 58,
@@ -591,8 +591,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288616/altar58_4_gx5wz0.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar58_5_sykrxt.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mixto",
+        colores: ["amarillo", "blanco", "azul rey"]
     },
     {
         id: 59,
@@ -600,15 +600,15 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar59_1_mnfrus.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar59_2_govgal.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 60,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar60_1_rjmh3r.jpg"
         ],
-        genero: "Hombre",
+        genero: "Mujer",
         colores: ["rojo", "blanco"]
     },
     {
@@ -616,15 +616,15 @@ export const ALTARESJSON: Altar[] = [
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288617/altar61_1_oqms5i.jpg",
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 62,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar62_1_gtz3mr.jpg"
         ],
-        genero: "Hombre",
+        genero: "Santos",
         colores: ["rojo", "blanco"]
     },
     {
@@ -632,48 +632,41 @@ export const ALTARESJSON: Altar[] = [
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar63_1_tzwqsq.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["vino", "blanco"]
     },
     {
         id: 64,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar64_1_ivfwjp.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Santos",
+        colores: ["azul", "blanco"]
     },
     {
         id: 65,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar65_1_ytnnb4.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
-    },
-    {
-        id: 66,
-        imagenes: [
-            "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar66_1_q40akh.jpg"
-        ],
-        genero: "Hombre",
+        genero: "Mixto",
         colores: ["rojo", "blanco"]
     },
+
     {
         id: 67,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar67_1_jisrts.jpg"
         ],
         genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        colores: ["rosa", "blanco"]
     },
     {
         id: 68,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar68_1_e8yotu.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Mujer",
+        colores: ["palo rosa", "blanco"]
     },
     {
         id: 69,
@@ -681,7 +674,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar69_1_xp7cwi.jpg"
         ],
         genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        colores: ["rojo", "blanco"]
     },
     {
         id: 70,
@@ -692,7 +685,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar70_4_otpqte.jpg"
         ],
         genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        colores: ["azul", "blanco"]
     },
     {
         id: 71,
@@ -700,8 +693,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar71_1_wej1bv.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288619/altar71_2_hjrqq7.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 72,
@@ -714,7 +707,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar72_7_iqikgt.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar72_8_hzqnjt.jpg"
         ],
-        genero: "Hombre",
+        genero: "Mixto",
         colores: ["rojo", "blanco"]
     },
     {
@@ -722,13 +715,14 @@ export const ALTARESJSON: Altar[] = [
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar73_1_xznnll.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Hombre",
+        colores: ["azul", "blanco"]
     },
     {
         id: 74,
         imagenes: [
-            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar74_1_xvcvh8.jpg"
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar74_1_xvcvh8.jpg",
+
         ],
         genero: "Hombre",
         colores: ["rojo", "blanco"]
@@ -736,11 +730,11 @@ export const ALTARESJSON: Altar[] = [
     {
         id: 75,
         imagenes: [
-            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar74_1_xvcvh8.jpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar75_2_ouwo9c.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar75_2_ouwo9c.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Mixto",
+        colores: ["rojo", "blanco"]
     },
     {
         id: 76,
@@ -748,8 +742,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288620/altar76_1_p9omoe.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar76_2_f6ni4l.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 77,
@@ -758,8 +752,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar77_2_cymo04.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar77_3_xfx0ps.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Hombre",
+        colores: ["azul", "blanco"]
     },
     {
         id: 78,
@@ -767,8 +761,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar78_1_rtna3g.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar78_2_yotbyk.jpg"
         ],
-        genero: "Hombre",
-        colores: ["rojo", "blanco"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     },
     {
         id: 79,
@@ -776,8 +770,8 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar79_2_pljvax.jpg",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288621/altar79_2_pljvax.jpg"
         ],
-        genero: "Mujer",
-        colores: ["rojo", "blanco", "azul", "negro"]
+        genero: "Santos",
+        colores: ["verde", "blanco", "amarillo"]
     }
 
 
