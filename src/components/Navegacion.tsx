@@ -35,7 +35,7 @@ export default function Navegacion() {
                         className={`items-center justify-between 
                             absolute top-24 xl:top-0 left-1/2 xl:left-0 -translate-x-1/2 xl:translate-none
                             shadow rounded-xl
-                            w-full max-w-10/12
+                            w-full max-w-10/12 md:max-w-8/12
                             bg-primary
                             z-50 mt-5 xl:mt-0
                             xl:flex-row flex-col flex
