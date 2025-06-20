@@ -94,7 +94,7 @@ export default function Filtros() {
             {/* ASIDE LATERAL FIJO */}
             <aside
                 className={`
-          fixed top-0 right-0 min-h-screen w-full xl:w-96 bg-black shadow-lg border-l  p-6
+          fixed top-0 right-0 min-h-screen w-full xl:w-96 bg-black xl:shadow-lg xl:border-l p-3 xl:p-6
           transform transition-transform duration-300 ease-in-out flex flex-col gap-4 
           ${asideVisible ? "translate-x-0" : "translate-x-full"}
           z-50
@@ -104,7 +104,7 @@ export default function Filtros() {
                     onClick={cerrarAside}
                     className="mb-4 text-right w-full text-white hover:text-gray-400 flex justify-end cursor-pointer"
                 >
-                    <IoClose className="xl:size-10" />
+                    <IoClose className="xl:size-10 size-7" />
                 </button>
 
                 <h2 className="text-3xl font-semibold mb-4 text-white">Filtros</h2>
