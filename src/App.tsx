@@ -4,6 +4,7 @@ import Error404 from "./pages/Error404"
 import Altares from "./pages/Altares"
 import Footer from "@/components/Footer"
 import { Toaster } from "sonner";
+import AreasPrincipales from "./pages/AreasPrincipales"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/*" element={<Error404 />} />
         <Route path="/altares" element={<Altares />} />
+        <Route path="/areas-principales" element={<AreasPrincipales />} />
       </Routes>
 
       <Footer />
