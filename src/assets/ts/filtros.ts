@@ -14,8 +14,22 @@ export const coloresDisponibles = [
         bordeCirculo: "border-black",
     },
     {
+        nombre: "azul cielo",
+        clase: "bg-[#9bcafe]",
+        texto: "text-black",
+        bordeCirculo: "border-black",
+    },
+
+    {
+        nombre: "azul rey",
+        clase: "bg-[#084a93]",
+        texto: "text-white",
+        bordeCirculo: "border-black",
+    },
+
+    {
         nombre: "verde",
-        clase: "bg-green-500",
+        clase: "bg-green-800",
         texto: "text-white",
         bordeCirculo: "border-black",
     },
@@ -33,16 +47,55 @@ export const coloresDisponibles = [
     },
     {
         nombre: "blanco",
-        clase: "bg-white border border-gray-300",
+        clase: "bg-white border border-black",
         texto: "text-black",
         bordeCirculo: "border-black",
     },
     {
-        nombre: "morado",
-        clase: "bg-purple-500",
-        texto: "text-white",
+        nombre: "rosa",
+        clase: "bg-[#ff6bb5]",
+        texto: "text-black",
         bordeCirculo: "border-black",
     },
+    {
+        nombre: "rosa pastel",
+        clase: "bg-[#ed0579]",
+        texto: "text-white",
+        bordeCirculo: "border-white",
+    },
+    {
+        nombre: "palo rosa",
+        clase: "bg-[#ff659d]",
+        texto: "text-black",
+        bordeCirculo: "border-black",
+    },
+    {
+        nombre: "dorado",
+        clase: "bg-[#d38600]",
+        texto: "text-black",
+        bordeCirculo: "border-black",
+    },
+    {
+        nombre: "lila",
+        clase: "bg-[#c97cff]",
+        texto: "text-black",
+        bordeCirculo: "border-black",
+    },
+    {
+        nombre: "verde jade",
+        clase: "bg-[#005435]",
+        texto: "text-white",
+        bordeCirculo: "border-white",
+    },
+    {
+        nombre: "vino",
+        clase: "bg-[#5c1212]",
+        texto: "text-white",
+        bordeCirculo: "border-white",
+    },
+
+
+
 ];
 
 
@@ -62,6 +115,12 @@ export const generosDisponibles = [
         color: "bg-purple-700",
         icono: "GiChurch",
     },
+
+    {
+        genero: "Mixto",
+        color: "bg-gradient-to-r from-blue-800 to-pink-600",
+        icono: "FaUserFriends",
+    }
 ] as GeneroProps[];
 
 export const textoDisponible = ({ filtroColores, filtroGenero }: { filtroGenero: string | null, filtroColores: string[] }) => {
