@@ -34,8 +34,6 @@ export interface GrupoAltaresProps {
 export interface EstructuraImagenProps {
     groupIndex: number;
     index: number;
-    countPares: number;
-    countImpares: number;
 }
 
 export interface PlaceholdersGridProps {
