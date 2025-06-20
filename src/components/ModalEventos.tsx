@@ -1,9 +1,11 @@
 import { SECCIONES_EVENTOS } from "@/assets/ts/constantes";
+import { useModalEventos } from "@/hooks/ModalEventos";
 import { IoClose } from "react-icons/io5"
 
 
-export default function ModalEventos({ onClose }: { onClose: () => void }) {
+export default function ModalEventos() {
 
+    const { handleNotViewEventos: onClose } = useModalEventos();
     return (
         <>
             <div className="fixed w-full h-full bg-black/70 z-50 flex items-center justify-center">
