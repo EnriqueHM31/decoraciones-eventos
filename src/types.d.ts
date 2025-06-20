@@ -1,5 +1,5 @@
 
-type FiltroGenero = "Hombre" | "Mujer" | "Santos" | null;
+type FiltroGenero = "Hombre" | "Mujer" | "Santos" | "Mixto" | null;
 
 export interface ImageOverlayGalleryProps {
     images: string[];
