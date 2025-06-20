@@ -9,16 +9,20 @@ import ZonaButtonQuitarFiltros from "../Filtros/ZonaButtonQuitarFiltros";
 
 export default function ZonaFiltros() {
     const { filtroGenero, filtroColores } = useGaleriaStore();
-    const { handleColorActivoArray, handleGeneroLowerCase, abierto } = useZonaFiltros();
+    const { handleColorActivoArray, handleGeneroLowerCase, abierto, handleAbrirVistaFiltros } = useZonaFiltros();
     const generoActivo = handleGeneroLowerCase(generosDisponibles, filtroGenero);
 
 
-    if (generoActivo === null) return null;
+
 
     return (
         <div className="w-full max-w-7xl mx-auto px-4">
             {/* Botón toggle sólo visible en móvil */}
-            <ZonaButtonAbrirFiltros />
+            {
+                (filtroColores.length > 0 && filtroGenero) && (
+                    <ZonaButtonAbrirFiltros abierto={abierto} handleAbrirVistaFiltros={handleAbrirVistaFiltros} />
+                )
+            }
 
             {/* Contenedor filtros con animación y estilos responsive */}
             <div
@@ -31,7 +35,7 @@ export default function ZonaFiltros() {
             >
                 {/* Etiqueta Filtros */}
                 {(filtroColores.length > 0 || filtroGenero) && (
-                    <p className="text-sm text-white font-bold px-4 py-2 rounded-md md:flex block  md:mb-0">
+                    <p className="text-sm text-white bg-primary font-bold px-4 py-2 rounded-md md:flex block  md:mb-0">
                         Filtros
                     </p>
                 )}
