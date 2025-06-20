@@ -7,38 +7,25 @@ import {
 } from "@/components/ui/carousel";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { useEffect, useState } from "react";
+import { useCarrousel } from "@/hooks/Carrusel";
+import type { ImagenesCarruselProps } from "@/types";
 
-interface Props {
-    images: string[];
-}
 
-export default function SliderImagenes({ images }: Props) {
-    const [api, setApi] = useState<any>(null);
-    const [current, setCurrent] = useState(1);
-    const [count, setCount] = useState(images.length);
-
-    useEffect(() => {
-        if (!api) return;
-
-        setCount(images.length);
-        api.on("select", () => {
-            setCurrent(api.selectedScrollSnap() + 1);
-        });
-    }, [api, images.length]);
+export default function SliderImagenes({ images }: ImagenesCarruselProps) {
+    const { current, count, setApi } = useCarrousel({ images });
 
     return (
         <>
-            <Carousel setApi={setApi} className="w-full py-0">
-                <CarouselContent className="py-0">
+            <Carousel setApi={setApi} className="w-full py-0 bg-transparent border-none">
+                <CarouselContent className="py-0 bg-transparent border-none">
                     {images.map((image, index) => (
                         <CarouselItem key={index}>
-                            <Card className="w-full h-full py-0 rounded-lg flex items-center justify-center">
-                                <CardContent className=" px-0 py-0 rounded-lg">
+                            <Card className="w-full h-full py-0 rounded-lg flex items-center justify-center bg-transparent border-none">
+                                <CardContent className=" px-0 py-4 rounded-lg bg-transparent">
                                     <img
                                         src={image}
                                         alt={`Slide ${index + 1}`}
-                                        className="h-auto max-w-full w-full rounded-lg object-cover object-center"
+                                        className="h-dvh w-full py-4 rounded-lg object-contain object-center"
                                         crossOrigin="anonymous"
                                     />
                                 </CardContent>
