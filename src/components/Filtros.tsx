@@ -20,7 +20,7 @@ export default function Filtros() {
             {/* ASIDE LATERAL FIJO */}
             <aside
                 className={`
-                            fixed top-0 right-0 h-screen w-full xl:w-96 bg-black xl:shadow-lg xl:border-l px-3 xl:p-6
+                            fixed top-0 right-0 h-screen w-full md:w-96 bg-black xl:shadow-lg xl:border-l px-3 xl:p-6
                             transform transition-transform duration-300 ease-in-out flex flex-col gap-4 py-10
                             ${asideVisible ? "translate-x-0" : "translate-x-full"}
                             z-50
