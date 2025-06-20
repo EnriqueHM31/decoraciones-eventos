@@ -1,9 +1,4 @@
-export interface Altar {
-    id: number;
-    imagenes: string[];
-    genero: string;
-    colores: string[];
-}
+import type { Altar } from "@/types";
 
 
 export const ALTARESJSON: Altar[] = [
