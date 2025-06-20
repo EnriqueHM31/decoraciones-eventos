@@ -7,7 +7,7 @@ export default function Altares() {
         <>
             <Navegacion />
 
-            <section className="flex flex-col items-center justify-center gap-1 xl:gap-7 py-2 px-2 w-full ">
+            <section className="flex flex-col items-center justify-center gap-1 md:gap-7 py-2 px-2 w-full ">
                 <Filtros />
                 <GaleriaAltares />
             </section>
