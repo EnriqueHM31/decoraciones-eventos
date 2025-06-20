@@ -2,6 +2,7 @@ import { useGaleriaStore } from "@/store/useGaleriaStore";
 import { generosDisponibles } from "@/assets/ts/filtros";
 import { IoMdMan, IoMdWoman } from "react-icons/io";
 import { GiChurch } from "react-icons/gi";
+import type { FiltroGenero } from "@/types";
 
 const iconMap = {
     IoMdMan: <IoMdMan className="xl:size-7" />,
@@ -19,7 +20,7 @@ export default function FiltroGenero() {
                 {generosDisponibles.map(({ genero, color, icono }, index) => (
                     <button
                         key={index}
-                        onClick={() => setFiltroGenero(genero)}
+                        onClick={() => setFiltroGenero(genero as FiltroGenero)} // ya no hay error
                         className={`px-4 py-2 rounded w-fit min-w-1/2 flex gap-4 items-center border ${filtroGenero === genero
                             ? `${color} text-white`
                             : "bg-black border-white text-white"

@@ -1,29 +1,32 @@
-import { create } from "zustand";
+import { create, type StateCreator } from "zustand";
 import type { GaleriaStore, FiltroGenero } from "@/types";
 
+// Define el tipo correcto para `set`
+type Set = Parameters<StateCreator<GaleriaStore>>[0];
 
-const setFiltroGenero = (set: any) => (genero: FiltroGenero) => {
+// Acciones
+const setFiltroGenero = (set: Set) => (genero: FiltroGenero) => {
     set({ filtroGenero: genero });
 };
 
-const toggleColor = (set: any) => (color: string) => {
-    set((state: GaleriaStore) => ({
+const toggleColor = (set: Set) => (color: string) => {
+    set((state) => ({
         filtroColores: state.filtroColores.includes(color)
             ? state.filtroColores.filter((c) => c !== color)
             : [...state.filtroColores, color],
     }));
 };
 
-const limpiarFiltros = (set: any) => () => {
+const limpiarFiltros = (set: Set) => () => {
     set({ filtroGenero: null, filtroColores: [] });
 };
 
-const removeGenero = (set: any) => () => {
+const removeGenero = (set: Set) => () => {
     set({ filtroGenero: null });
 };
 
-const removeColor = (set: any) => (color: string) => {
-    set((state: GaleriaStore) => ({
+const removeColor = (set: Set) => (color: string) => {
+    set((state) => ({
         filtroColores: state.filtroColores.filter((c) => c !== color),
     }));
 };
