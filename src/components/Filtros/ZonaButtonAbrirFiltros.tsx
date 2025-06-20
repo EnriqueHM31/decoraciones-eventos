@@ -1,9 +1,7 @@
-import { useZonaFiltros } from "@/hooks/ZonaFiltros";
 
-export default function ZonaButtonAbrirFiltros() {
+export default function ZonaButtonAbrirFiltros({ abierto, handleAbrirVistaFiltros }: { abierto: boolean, handleAbrirVistaFiltros: () => void }) {
 
 
-    const { abierto, handleAbrirVistaFiltros } = useZonaFiltros();
     return (
         <div className="w-full flex justify-end md:hidden ">
             <button
