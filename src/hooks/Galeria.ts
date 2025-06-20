@@ -1,11 +1,9 @@
 import { ALTARESJSON } from "@/assets/mooks/altares";
 import { useGaleriaStore } from "@/store/useGaleriaStore";
-import type { EstructuraImagenProps, GrupoAltaresProps } from "@/types";
+import type { EstructuraImagenProps } from "@/types";
 
 export function useGaleria() {
-
     const { filtroGenero, filtroColores } = useGaleriaStore();
-
 
     const imagenesConAltar = ALTARESJSON
         .filter((altar) => altar.imagenes.length > 0)
@@ -18,41 +16,29 @@ export function useGaleria() {
         })
         .map((altar) => ({ altar, img: altar.imagenes[0] }));
 
-    const chunked = chunkArray(imagenesConAltar, 4);
+    const columnas = organizarPorColumnas(imagenesConAltar, 4);
 
-    const EstructuraImagen = ({ groupIndex, index, countPares, countImpares }: EstructuraImagenProps) => {
-
+    const EstructuraImagen = ({ groupIndex, index, }: EstructuraImagenProps & { groupIndex: number }) => {
         const isEvenGroup = groupIndex % 2 === 0;
-        const use20vh = (index % 2 === 0 && isEvenGroup) || (index % 2 !== 0 && !isEvenGroup);
+        const use20vh = (index % 2 !== 0 && isEvenGroup) || (index % 2 === 0 && !isEvenGroup);
         const heightClass = use20vh ? "sm:h-[20vh] h-[40vh]" : "sm:h-[60vh] h-[40vh]";
-        const isLazy = (index % 2 === 0 ? countPares : countImpares) >= 2;
+        const isLazy = index >= 4;
         return {
             heightClass,
-            isLazy
-        }
-    }
-
-    const DividirSeccionesGaleria = (grupo: GrupoAltaresProps[]) => {
-        const countPares = grupo.filter((_, i) => i % 2 === 0).length;
-        const countImpares = grupo.filter((_, i) => i % 2 !== 0).length;
-        return {
-            countPares,
-            countImpares
-        }
-    }
+            isLazy,
+        };
+    };
 
     return {
-        chunked,
+        columnas,
         EstructuraImagen,
-        DividirSeccionesGaleria
-    }
+    };
 }
 
-
-function chunkArray<T>(array: T[], size: number): T[][] {
-    const result: T[][] = [];
-    for (let i = 0; i < array.length; i += size) {
-        result.push(array.slice(i, i + size));
-    }
+function organizarPorColumnas<T>(array: T[], columnas: number): T[][] {
+    const result: T[][] = Array.from({ length: columnas }, () => []);
+    array.forEach((item, index) => {
+        result[index % columnas].push(item);
+    });
     return result;
 }
