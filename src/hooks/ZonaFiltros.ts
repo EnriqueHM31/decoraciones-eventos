@@ -10,7 +10,7 @@ export function useZonaFiltros() {
     }
 
     const handleAbrirVistaFiltros = () => {
-        setAbierto(true);
+        setAbierto((v) => !v);
     }
 
     function handleColorActivoArray(
