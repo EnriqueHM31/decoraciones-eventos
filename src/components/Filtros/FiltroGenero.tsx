@@ -2,12 +2,15 @@ import { useGaleriaStore } from "@/store/useGaleriaStore";
 import { generosDisponibles } from "@/assets/ts/filtros";
 import { IoMdMan, IoMdWoman } from "react-icons/io";
 import { GiChurch } from "react-icons/gi";
+import { FaUserFriends } from "react-icons/fa";
 import type { FiltroGenero } from "@/types";
 
 const iconMap = {
     IoMdMan: <IoMdMan className="xl:size-7" />,
     IoMdWoman: <IoMdWoman className="xl:size-7" />,
     GiChurch: <GiChurch className="xl:size-7" />,
+    FaUserFriends: <FaUserFriends className="xl:size-7" />,
+
 };
 
 export default function FiltroGenero() {
