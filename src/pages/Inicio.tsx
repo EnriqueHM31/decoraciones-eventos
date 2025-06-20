@@ -6,13 +6,13 @@ import SliderImagenes from "@/components/SliderImagenes";
 
 export default function Inicio() {
 
-    const { visible, handleViewEventos, handleNotViewEventos } = useModalEventos();
+    const { visible, handleViewEventos } = useModalEventos();
 
     return (
         <>
             {
                 visible && (
-                    <ModalEventos onClose={handleNotViewEventos} />
+                    <ModalEventos />
                 )
             }
             <div className=" relative  ">
