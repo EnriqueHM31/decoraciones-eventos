@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import type { ImagenGaleriaProps } from "@/types";
 import SliderImagenes from "@/components/SliderImagenes";
+import type { ImagenGaleriaProps } from "@/types";
 
 
 export default function ImagenGaleria({ altar, index, isLazy, heightClass }: ImagenGaleriaProps) {
