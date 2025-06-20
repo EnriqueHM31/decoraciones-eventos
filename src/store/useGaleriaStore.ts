@@ -40,4 +40,5 @@ export const useGaleriaStore = create<GaleriaStore>((set) => ({
     limpiarFiltros: limpiarFiltros(set),
     removeGenero: removeGenero(set),
     removeColor: removeColor(set),
+
 }));
