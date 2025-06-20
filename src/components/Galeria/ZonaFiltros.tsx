@@ -13,6 +13,7 @@ export default function ZonaFiltros() {
     const generoActivo = handleGeneroLowerCase(generosDisponibles, filtroGenero);
 
 
+    if (generoActivo === null) return null;
 
     return (
         <div className="w-full max-w-7xl mx-auto px-4">
@@ -41,13 +42,13 @@ export default function ZonaFiltros() {
                 )}
 
                 {/* Filtros de colores */}
-                {filtroColores.map((color) => {
+                {filtroColores.map((color, index) => {
                     const { colorActivo } = handleColorActivoArray(coloresDisponibles, color);
                     if (!colorActivo) return null;
                     const { nombre, clase, texto, bordeCirculo } = colorActivo;
 
                     return (
-                        <ZonaFiltroColores nombre={nombre} clase={clase} texto={texto} bordeCirculo={bordeCirculo} />
+                        <ZonaFiltroColores key={index} nombre={nombre} clase={clase} texto={texto} bordeCirculo={bordeCirculo} />
                     );
                 })}
 
