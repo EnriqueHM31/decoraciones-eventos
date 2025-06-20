@@ -94,7 +94,7 @@ export default function Filtros() {
             {/* ASIDE LATERAL FIJO */}
             <aside
                 className={`
-          fixed top-0 right-0 h-screen w-full xl:w-96 bg-black shadow-lg border-l border-gray-300 p-6
+          fixed top-0 right-0 min-h-screen w-full xl:w-96 bg-black shadow-lg border-l  p-6
           transform transition-transform duration-300 ease-in-out flex flex-col gap-4 
           ${asideVisible ? "translate-x-0" : "translate-x-full"}
           z-50
