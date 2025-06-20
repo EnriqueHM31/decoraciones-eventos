@@ -16,12 +16,12 @@ export default function FiltroGenero() {
     return (
         <div className=" flex flex-col gap-2">
             <h3 className="font-semibold mb-2 px-4 py-2 bg-white text-black w-fit rounded-2xl">Para</h3>
-            <div className="flex flex-col gap-2 mb-5">
+            <div className="flex flex-wrap gap-x-3 gap-y-4 mb-5">
                 {generosDisponibles.map(({ genero, color, icono }, index) => (
                     <button
                         key={index}
                         onClick={() => setFiltroGenero(genero as FiltroGenero)} // ya no hay error
-                        className={`px-4 py-2 rounded w-fit min-w-1/2 flex gap-4 items-center border ${filtroGenero === genero
+                        className={`px-4 py-2 rounded flex gap-4 items-center border ${filtroGenero === genero
                             ? `${color} text-white`
                             : "bg-black border-white text-white"
                             }`}
