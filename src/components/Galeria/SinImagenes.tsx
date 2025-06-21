@@ -5,7 +5,7 @@ export default function SinImagenes() {
     const { filtroGenero, filtroColores } = useGaleriaStore();
 
     return (
-        <div className="flex flex-col items-center  gap-4 text-center h-screen w-full  px-4 xl:px-0
+        <div className="flex flex-col items-center  gap-4 text-center min-h-[80dvh] w-full  px-4 xl:px-0
                     ">
             <h2 className="text-lg lg:text-4xl font-bold text-black text-center">
                 {
