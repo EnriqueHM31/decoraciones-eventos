@@ -1,4 +1,5 @@
 import IMAGEN404 from "@/assets/img/404.webp";
+import TituloPagina from "@/components/ui/TituloPagina";
 import { useNavegaciones } from "@/hooks/Navigate";
 
 
@@ -8,6 +9,8 @@ export default function Error404() {
 
     return (
         <>
+
+            <TituloPagina titulo="Error 404" />
 
             <section className="flex xl:flex-row flex-col items-center  justify-center h-dvh py-5 max-w-3/4 mx-auto gap-10">
 
