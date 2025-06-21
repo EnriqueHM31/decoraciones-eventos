@@ -12,6 +12,9 @@ export const useModalEventos = () => {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        const toastID = toast.loading("Enviando comentario...");
+
         const formData = new FormData(e.currentTarget);
         const nombreUsuario = formData.get("nombre_usuario");
         const mensajeUsuario = formData.get("mensaje_usuario");
@@ -20,22 +23,27 @@ export const useModalEventos = () => {
             return;
         }
 
-        const res = await fetch(import.meta.env.VITE_APP_API_URL + "/correo", {
+
+        const res = await fetch(import.meta.env.VITE_APP_API_URL + "/api/correo", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                nombreUsuario,
-                mensajeUsuario,
+                nombre: nombreUsuario,
+                mensaje: mensajeUsuario,
             }),
         });
 
         if (res.ok) {
-            toast.success("Gracias por tu comentario");
+            toast.success("Gracias por tu comentario", {
+                id: toastID,
+            });
             setIsOpenFormulario(false);
         } else {
-            toast.error("Hubo un error al enviar tu comentario");
+            toast.error("Hubo un error al enviar tu comentario", {
+                id: toastID,
+            });
         }
     };
 
