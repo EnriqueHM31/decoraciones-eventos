@@ -52,13 +52,13 @@ export const coloresDisponibles = [
         bordeCirculo: "border-black",
     },
     {
-        nombre: "rosa",
+        nombre: "rosa pastel",
         clase: "bg-[#ff6bb5]",
         texto: "text-black",
         bordeCirculo: "border-black",
     },
     {
-        nombre: "rosa pastel",
+        nombre: "fucsia ",
         clase: "bg-[#ed0579]",
         texto: "text-white",
         bordeCirculo: "border-white",
