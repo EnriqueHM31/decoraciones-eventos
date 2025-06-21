@@ -10,16 +10,33 @@ export const useModalEventos = () => {
         setIsOpenFormulario(!isOpenFormulario);
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
-        if (!formData.get("nombre_usuario") || !formData.get("mensaje_usuario")) {
+        const nombreUsuario = formData.get("nombre_usuario");
+        const mensajeUsuario = formData.get("mensaje_usuario");
+        if (!nombreUsuario || !mensajeUsuario) {
             toast.error("Por favor, rellena todos los campos");
             return;
         }
 
-        toast.success("Gracias por tu comentario");
-        setIsOpenFormulario(false);
+        const res = await fetch(import.meta.env.VITE_APP_API_URL + "/correo", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                nombreUsuario,
+                mensajeUsuario,
+            }),
+        });
+
+        if (res.ok) {
+            toast.success("Gracias por tu comentario");
+            setIsOpenFormulario(false);
+        } else {
+            toast.error("Hubo un error al enviar tu comentario");
+        }
     };
 
 
