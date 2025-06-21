@@ -1,7 +1,6 @@
 import { ALTARESJSON } from "@/assets/mooks/altares";
 import { useGaleriaStore } from "@/store/useGaleriaStore";
 import type { EstructuraImagenProps } from "@/types";
-
 export function useGaleria() {
     const { filtroGenero, filtroColores } = useGaleriaStore();
 
@@ -16,9 +15,20 @@ export function useGaleria() {
         })
         .map((altar) => ({ altar, img: altar.imagenes[0] }));
 
-    const columnas = organizarPorColumnas(imagenesConAltar, 4);
+    // 🧠 Detectar cantidad de columnas dinámicamente
+    const numColumnas = imagenesConAltar.length < 8 ? 2 : 4;
 
-    const EstructuraImagen = ({ groupIndex, index, }: EstructuraImagenProps & { groupIndex: number }) => {
+    const columnas = organizarPorColumnas(imagenesConAltar, numColumnas);
+
+    const EstructuraImagen = ({ groupIndex, index }: EstructuraImagenProps & { groupIndex: number }) => {
+
+        if (imagenesConAltar.length === 2) {
+            return {
+                heightClass: "sm:h-[60vh]",
+                isLazy: false
+            }
+        };
+
         const isEvenGroup = groupIndex % 2 === 0;
         const use20vh = (index % 2 !== 0 && isEvenGroup) || (index % 2 === 0 && !isEvenGroup);
         const heightClass = use20vh ? "sm:h-[20vh] h-[40vh]" : "sm:h-[60vh] h-[40vh]";
