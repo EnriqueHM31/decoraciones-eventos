@@ -17,6 +17,10 @@ export default function FiltroColores() {
                             onClick={() => toggleColor(color.nombre)}
                             className={`flex items-center gap-2 px-3 py-2 rounded text-sm transition-colors 
                 ${activo ? `${color.clase} ${color.texto}` : "bg-gray-100 text-black"}`}
+                            aria-label={`Cambiar filtro de color ${color.nombre}`}
+                            title={`Cambiar filtro de color ${color.nombre}`}
+                            type="button"
+                            aria-labelledby={`filtro-color-${color.nombre}-title`}
                         >
                             <div
                                 className={`w-4 h-4 rounded-full ${color.clase} ${activo ? `border-2 ${color.bordeCirculo}` : ""

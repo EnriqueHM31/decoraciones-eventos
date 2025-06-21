@@ -28,6 +28,10 @@ export default function FiltroGenero() {
                             ? `${color} text-white`
                             : "bg-black border-white text-white"
                             }`}
+                        aria-label={`Cambiar filtro de género ${genero}`}
+                        title={`Cambiar filtro de género ${genero}`}
+                        type="button"
+                        aria-labelledby={`filtro-genero-${genero}-title`}
                     >
                         {iconMap[icono]}
                         {genero.toLocaleUpperCase()}

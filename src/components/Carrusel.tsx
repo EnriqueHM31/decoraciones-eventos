@@ -44,6 +44,10 @@ export default function SliderImagenes({ images }: ImagenesCarruselProps) {
             <button
                 onClick={handleClickWhatsapp}
                 className="btn bg-green-600 rounded-full text-white p-4 fixed bottom-1/12 right-7 md:right-12 z-30 cursor-pointer"
+                aria-label="Enviar WhatsApp"
+                title="Enviar WhatsApp"
+                type="button"
+                aria-labelledby="enviar-whatsapp-title"
             >
                 <FaWhatsapp className="md:size-12 size-7 text-white" />
             </button>

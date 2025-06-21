@@ -40,6 +40,8 @@ export default function ZonaFiltroGenero({ generoActivo }: { generoActivo: Gener
                 className="hover:text-black text-white/80"
                 aria-label={`Quitar filtro género ${genero}`}
                 type="button"
+                aria-labelledby={`filtro-genero-${genero}-title`}
+                title={`Quitar filtro género ${genero}`}
             >
                 <IoClose className="w-4 h-4" />
             </button>

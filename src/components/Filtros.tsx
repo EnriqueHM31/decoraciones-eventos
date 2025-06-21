@@ -30,6 +30,10 @@ export default function Filtros() {
                 <button
                     onClick={cerrarAside}
                     className="mb-4 text-right w-full text-white hover:text-gray-400 flex justify-end cursor-pointer"
+                    aria-label="Cerrar filtros"
+                    title="Cerrar filtros"
+                    type="button"
+                    aria-labelledby="filtros-title"
                 >
                     <IoClose className="xl:size-10 size-7" />
                 </button>
@@ -42,7 +46,11 @@ export default function Filtros() {
                     onClick={() => {
                         limpiarFiltros();
                     }}
-                    className="w-full py-2 bg-red-500 text-white rounded cursor-pointer hover:bg-red-400 transition-colors duration-500 ease-in-out "
+                    className="w-full py-2 bg-red-400 text-white rounded cursor-pointer hover:bg-red-300 transition-colors duration-500 ease-in-out "
+                    title="Limpiar filtros"
+                    aria-label="Limpiar filtros"
+                    type="button"
+                    aria-labelledby="limpiar-filtros-title"
                 >
                     Limpiar filtros
                 </button>
