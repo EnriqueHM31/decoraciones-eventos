@@ -46,7 +46,7 @@ export default function Filtros() {
                     onClick={() => {
                         limpiarFiltros();
                     }}
-                    className="w-full py-2 bg-red-400 text-white rounded cursor-pointer hover:bg-red-300 transition-colors duration-500 ease-in-out "
+                    className="w-full py-2 bg-red-700 text-white rounded cursor-pointer hover:bg-red-600 transition-colors duration-500 ease-in-out "
                     title="Limpiar filtros"
                     aria-label="Limpiar filtros"
                     type="button"
