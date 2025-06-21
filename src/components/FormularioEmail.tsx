@@ -16,7 +16,7 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
                         <span className="inline-flex items-center text-sm rounded-s-md bg-primary">
                             <FaUserCircle className="size-6 text-white" />
                         </span>
-                        <span id="nombre_usuario" className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full text-xs 2xl:text-xs p-2.5  placeholder:text-gray-500 text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <span className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full text-xs 2xl:text-xs p-2.5  placeholder:text-gray-500 text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             Nombre
                         </span>
                     </div>
@@ -29,7 +29,7 @@ export default function FormularioEmail({ handleSubmit, handleClickFormulario }:
                         <span className="inline-flex items-center text-sm rounded-s-md bg-primary">
                             <SiGooglemessages className="size-6 text-white" />
                         </span>
-                        <span id="mensaje_usuario" className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full text-xs 2xl:text-xs p-2.5  placeholder:text-gray-500 text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <span className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full text-xs 2xl:text-xs p-2.5  placeholder:text-gray-500 text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             Comentario
                         </span>
                     </div>
