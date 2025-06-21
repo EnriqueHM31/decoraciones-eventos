@@ -21,7 +21,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288624/altar2_4_f2npin.jpg"
         ],
         genero: "Mujer",
-        colores: ["blanco", "rosa"]
+        colores: ["blanco", "rosa pastel"]
     },
     {
         id: 3,
@@ -101,7 +101,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288578/altar10_2_rsgisi.jpg",
         ],
         genero: "Mujer",
-        colores: ["rosa", "blanco"]
+        colores: ["rosa pastel", "blanco"]
     },
     {
         id: 11,
@@ -135,7 +135,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288583/altar13_6_ivecz5.jpg"
         ],
         genero: "Mujer",
-        colores: ["rosa", "rosa pastel", "blanco"]
+        colores: ["rosa pastel", "fucsia ", "blanco"]
     },
     {
         id: 14,
@@ -176,7 +176,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288585/altar17_2_nkvbeb.jpg"
         ],
         genero: "Mujer",
-        colores: ["rosa", "rosa pastel", "blanco"]
+        colores: ["rosa pastel", "fucsia ", "blanco"]
     },
     {
         id: 18,
@@ -211,7 +211,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288589/altar20_3_xltbbz.jpg"
         ],
         genero: "Mujer",
-        colores: ["rosa", "blanco"]
+        colores: ["rosa pastel", "blanco"]
     },
     {
         id: 21,
@@ -283,7 +283,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288595/altar27_6_azbpbq.jpg"
         ],
         genero: "Mujer",
-        colores: ["rosa", "blanco"]
+        colores: ["rosa pastel", "blanco"]
     },
     {
         id: 28,
@@ -571,7 +571,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288615/altar56_6_gwue7g.jpg"
         ],
         genero: "Mujer",
-        colores: ["rosa", "rosa pastel", "blanco"]
+        colores: ["rosa pastel", "fucsia ", "blanco"]
     },
     {
         id: 57,
@@ -658,7 +658,7 @@ export const ALTARESJSON: Altar[] = [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750288618/altar67_1_jisrts.jpg"
         ],
         genero: "Mujer",
-        colores: ["rosa", "blanco"]
+        colores: ["rosa pastel", "blanco"]
     },
     {
         id: 68,
