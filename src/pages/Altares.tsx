@@ -13,7 +13,6 @@ export default function Altares() {
                 <Filtros />
                 <GaleriaImagenes MOOKS={MOOKS} tipo="altares" />
             </section>
-
         </>
     );
 }
