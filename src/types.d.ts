@@ -1,6 +1,29 @@
 
 type FiltroGenero = "Hombre" | "Mujer" | "Santos" | "Mixto" | null;
 
+type Galeria = Altar[] | Decoracion[] | null
+
+interface GaleriaProps {
+    MOOKS: Galeria;
+    tipo: string;
+}
+
+interface GaleriaColumnasProps {
+    galeria: Altar | Decoracion;
+    img: string
+}
+
+export interface Altar {
+    id: number;
+    imagenes: string[];
+    genero: string;
+    colores: string[];
+}
+
+export interface Decoracion {
+    imagenes: string[];
+}
+
 export interface ImageOverlayGalleryProps {
     images: string[];
     styles?: string;
@@ -19,12 +42,6 @@ interface FormularioEmailProps {
     handleClickFormulario: () => void;
 }
 
-export interface Altar {
-    id: number;
-    imagenes: string[];
-    genero: string;
-    colores: string[];
-}
 
 export interface GrupoAltaresProps {
     altar: Altar;
@@ -34,6 +51,7 @@ export interface GrupoAltaresProps {
 export interface EstructuraImagenProps {
     groupIndex: number;
     index: number;
+    arrayGaleria: GaleriaColumnasProps[] | null;
 }
 
 export interface PlaceholdersGridProps {
@@ -45,10 +63,8 @@ export interface PlaceholdersGridProps {
 }
 
 export interface ImagenGaleriaProps {
-    altar: {
-        altar: Altar;
-        img: string;
-    }
+    altar?: Altar | undefined;
+    decoracion?: Decoracion | undefined;
     index: number;
     isLazy: boolean;
     heightClass: string;
