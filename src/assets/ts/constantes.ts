@@ -4,7 +4,7 @@ export const LINKS = [
     { label: 'Inicio', to: '/' },
     { label: 'Altares', to: '/altares' },
     { label: 'Areas Principales', to: '/areas-principales' },
-    { label: 'Eventos', to: '/eventos' },
+    { label: 'Eventos', to: '/decoraciones' },
 ]
 
 export const SECCIONES_EVENTOS = [
