@@ -15,7 +15,7 @@ export default function Filtros() {
     return (
         <>
             {/* BOTÓN para mostrar aside en desktop/tablet */}
-            <BotonAbrirFiltros toggleAside={toggleAside} />
+            <BotonAbrirFiltros toggleAside={toggleAside} tipo="altares" />
 
             {/* ASIDE LATERAL FIJO */}
             <aside
