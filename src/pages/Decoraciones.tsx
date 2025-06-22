@@ -11,7 +11,7 @@ export default function Eventos() {
             <TituloPagina titulo="Decoraciones" />
             <Navegacion />
 
-            <section className="min-h-[90dvh] flex flex-col items-center justify-center">
+            <section className="flex flex-col items-center justify-center gap-1 md:gap-7 py-2 px-2 w-full ">
                 <GaleriaImagenes MOOKS={MOOKS} tipo="decoraciones" />
             </section>
         </>
