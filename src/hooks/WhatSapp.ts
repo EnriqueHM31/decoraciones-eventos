@@ -1,9 +1,5 @@
 import { useState } from "react";
-
-interface HooksWhatsappProps {
-    images: string[];
-    current: number;
-}
+import type { HooksWhatsappProps } from "@/types";
 
 export function useWhatsapp({ images, current }: HooksWhatsappProps) {
     const [modalOpen, setModalOpen] = useState(false);
