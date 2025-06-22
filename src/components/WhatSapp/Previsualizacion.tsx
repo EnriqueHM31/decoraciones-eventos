@@ -1,11 +1,5 @@
 import { IoClose } from "react-icons/io5";
-
-interface PrevisualizacionMensajeWhatsappProps {
-    imagenSeleccionada: string;
-    handleMensaje: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-    handleClickCloseWhatsapp: () => void;
-    mensaje: string;
-}
+import type { PrevisualizacionMensajeWhatsappProps } from "@/types";
 
 
 export default function Previsualizacion({ mensaje, imagenSeleccionada, handleMensaje, handleClickCloseWhatsapp }: PrevisualizacionMensajeWhatsappProps) {
