@@ -1,14 +1,14 @@
 
-type FiltroGenero = "Hombre" | "Mujer" | "Santos" | "Mixto" | null;
+export type FiltroGenero = "Hombre" | "Mujer" | "Santos" | "Mixto" | null;
 
-type Galeria = Altar[] | Decoracion[] | null
+export type Galeria = Altar[] | Decoracion[] | null
 
-interface GaleriaProps {
+export interface GaleriaProps {
     MOOKS: Galeria;
     tipo: string;
 }
 
-interface GaleriaColumnasProps {
+export interface GaleriaColumnasProps {
     galeria: Altar | Decoracion;
     img: string
 }
@@ -37,7 +37,7 @@ export interface AltaresJsonProps {
     }>;
 }
 
-interface FormularioEmailProps {
+export interface FormularioEmailProps {
     handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
     handleClickFormulario: () => void;
 }
@@ -70,11 +70,16 @@ export interface ImagenGaleriaProps {
     heightClass: string;
 }
 
-interface ImagenesCarruselProps {
+export interface ImagenesCarruselProps {
     images: string[];
 }
 
-type IconoGeneroKey = "IoMdMan" | "IoMdWoman" | "GiChurch";
+export type IconoGeneroKey = "IoMdMan" | "IoMdWoman" | "GiChurch";
+
+export interface BotonMenuProps {
+    toggleAside?: () => void;
+    tipo: "altares" | "decoraciones";
+}
 
 
 export interface GeneroProps {
@@ -83,12 +88,25 @@ export interface GeneroProps {
     icono: IconoGeneroKey;
 }
 
-interface ColorProps {
+export interface ColorProps {
     nombre: string;
     clase: string;
     texto: string;
     bordeCirculo: string;
 }
+
+export interface PrevisualizacionMensajeWhatsappProps {
+    imagenSeleccionada: string;
+    handleMensaje: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+    handleClickCloseWhatsapp: () => void;
+    mensaje: string;
+}
+
+export interface HooksWhatsappProps {
+    images: string[];
+    current: number;
+}
+
 
 
 export interface GaleriaStore {
