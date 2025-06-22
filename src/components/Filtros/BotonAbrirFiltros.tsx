@@ -1,18 +1,57 @@
-import { FaFilter } from "react-icons/fa";
+import { useNavegaciones } from "@/hooks/Navigate";
+import { FaFilter, FaBars } from "react-icons/fa";
+import { GoMoveToTop } from "react-icons/go";
+import { useMenuOpciones } from "@/hooks/MenuOpciones";
+import type { BotonMenuProps } from "@/types";
 
-export default function BotonAbrirFiltros({ toggleAside }: { toggleAside: () => void }) {
+export default function BotonMenu({ toggleAside, tipo }: BotonMenuProps) {
+    const { goInicio } = useNavegaciones();
+    const { toggleMenu, menuAbierto, animandoCierre } = useMenuOpciones();
+
     return (
-        <div className=" justify-end mb-2 w-full max-w-11/12 cursor-pointer">
-            <button
-                onClick={toggleAside}
-                className="xl:p-6 p-5 size-14 md:size-18 flex items-center justify-center rounded-full bg-primary text-white fixed bottom-4 right-4 md:bottom-1/12 md:right-10 z-50"
-                aria-label="Abrir filtros"
-                title="Abrir filtros"
-                type="button"
-                aria-labelledby="filtros-title"
-            >
-                <FaFilter className="size-14 text-white" />
-            </button>
+        <div className="fixed bottom-8 right-8 z-50">
+            <div className="relative">
+                {/* Botón flotante */}
+                <button
+                    onClick={toggleMenu}
+                    className="bg-primary text-white p-4 rounded-full shadow-lg"
+                    aria-label="Abrir menú"
+                >
+                    <FaBars className="text-xl" />
+                </button>
+
+                {/* Menú flotante animado */}
+                {(menuAbierto || animandoCierre) && (
+                    <div
+                        className={`absolute bottom-full right-0 mb-4 flex flex-col items-end gap-2 z-50
+                ${animandoCierre ? 'animate-fade-out' : 'animate-fade-in'}`}
+                    >
+                        {tipo === "altares" && toggleAside && (
+                            <button
+                                onClick={() => {
+                                    toggleAside();
+                                    toggleMenu();
+                                }}
+                                className="bg-white text-black px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition min-w-48 flex items-center gap-2"
+                            >
+                                <FaFilter className="inline-block mr-2" />
+                                Filtros
+                            </button>
+                        )}
+
+                        <button
+                            onClick={() => {
+                                goInicio();
+                                toggleMenu();
+                            }}
+                            className="bg-white text-black px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition min-w-48 flex items-center gap-2"
+                        >
+                            <GoMoveToTop className="inline-block mr-2" />
+                            Volver al inicio
+                        </button>
+                    </div>
+                )}
+            </div>
         </div>
-    )
+    );
 }
