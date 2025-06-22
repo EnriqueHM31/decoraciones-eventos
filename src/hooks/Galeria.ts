@@ -20,6 +20,8 @@ export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
                 galeria,
                 img: galeria.imagenes[0],
             }));
+
+
     } if (tipo === "decoraciones") {
         imagenesGaleria = (MOOKS as Decoracion[])
             .filter((galeria) => galeria.imagenes.length > 0)
