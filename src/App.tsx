@@ -5,7 +5,7 @@ import Altares from "./pages/Altares"
 import Footer from "@/components/Footer"
 import { Toaster } from "sonner";
 import AreasPrincipales from "./pages/AreasPrincipales"
-import Eventos from "./pages/Eventos"
+import Eventos from "./pages/Decoraciones"
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <Route path="/*" element={<Error404 />} />
         <Route path="/altares" element={<Altares />} />
         <Route path="/areas-principales" element={<AreasPrincipales />} />
-        <Route path="/eventos" element={<Eventos />} />
+        <Route path="/decoraciones" element={<Eventos />} />
       </Routes>
 
       <Footer />
