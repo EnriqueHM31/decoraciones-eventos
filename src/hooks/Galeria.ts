@@ -1,50 +1,75 @@
-import { ALTARESJSON } from "@/assets/mooks/altares";
 import { useGaleriaStore } from "@/store/useGaleriaStore";
-import type { EstructuraImagenProps } from "@/types";
-export function useGaleria() {
+import type { EstructuraImagenProps, GaleriaProps, GaleriaColumnasProps, Altar, Decoracion } from "@/types";
+
+export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
     const { filtroGenero, filtroColores } = useGaleriaStore();
+    let imagenesGaleria: GaleriaColumnasProps[] = [];
 
-    const imagenesConAltar = ALTARESJSON
-        .filter((altar) => altar.imagenes.length > 0)
-        .filter((altar) => {
-            const cumpleGenero = !filtroGenero || altar.genero === filtroGenero;
-            const cumpleColores =
-                filtroColores.length === 0 ||
-                filtroColores.some((color) => altar.colores.includes(color));
-            return cumpleGenero && cumpleColores;
-        })
-        .map((altar) => ({ altar, img: altar.imagenes[0] }));
+    // Generar las imágenes filtradas según tipo
+    if (tipo === "altares") {
+        imagenesGaleria = (MOOKS as Altar[])
+            .filter((galeria) => galeria.imagenes.length > 0)
+            .filter((galeria) => {
+                const cumpleGenero = !filtroGenero || galeria.genero === filtroGenero;
+                const cumpleColores =
+                    filtroColores.length === 0 ||
+                    filtroColores.some((color) => galeria.colores.includes(color));
+                return cumpleGenero && cumpleColores;
+            })
+            .map((galeria) => ({
+                galeria,
+                img: galeria.imagenes[0],
+            }));
+    } if (tipo === "decoraciones") {
+        imagenesGaleria = (MOOKS as Decoracion[])
+            .filter((galeria) => galeria.imagenes.length > 0)
+            .map((galeria) => ({
+                galeria,
+                img: galeria.imagenes[0],
+            }));
+    }
 
-    // 🧠 Detectar cantidad de columnas dinámicamente
-    const numColumnas = imagenesConAltar.length < 8 ? 2 : 4;
+    // Determinar número de columnas dinámicamente
+    const numColumnas = imagenesGaleria.length < 8 ? 2 : 4;
 
-    const columnas = organizarPorColumnas(imagenesConAltar, numColumnas);
+    // Dividir en columnas
+    const columnas = organizarPorColumnas(imagenesGaleria, numColumnas);
 
-    const EstructuraImagen = ({ groupIndex, index }: EstructuraImagenProps & { groupIndex: number }) => {
+    // Función para determinar estructura visual de cada imagen
+    const EstructuraImagen = ({ groupIndex, index, arrayGaleria }: EstructuraImagenProps) => {
 
-        if (imagenesConAltar.length === 2) {
-            return {
-                heightClass: "sm:h-[60vh]",
-                isLazy: false
-            }
-        };
+        console.log(arrayGaleria?.length);
+        if (!arrayGaleria) return { heightClass: "", isLazy: false };
+
+        if (arrayGaleria.length === 1) return { heightClass: "sm:h-[60vh]", isLazy: false };
+
+
+
 
         const isEvenGroup = groupIndex % 2 === 0;
         const use20vh = (index % 2 !== 0 && isEvenGroup) || (index % 2 === 0 && !isEvenGroup);
         const heightClass = use20vh ? "sm:h-[20vh] h-[40vh]" : "sm:h-[60vh] h-[40vh]";
         const isLazy = index >= 4;
+
         return {
             heightClass,
             isLazy,
         };
     };
 
+
+    function esAltar(obj: Altar | Decoracion | null): obj is Altar {
+        return obj !== null && "genero" in obj && "colores" in obj;
+    }
+
     return {
         columnas,
         EstructuraImagen,
+        esAltar
     };
 }
 
+// Función auxiliar para dividir en columnas
 function organizarPorColumnas<T>(array: T[], columnas: number): T[][] {
     const result: T[][] = Array.from({ length: columnas }, () => []);
     array.forEach((item, index) => {
