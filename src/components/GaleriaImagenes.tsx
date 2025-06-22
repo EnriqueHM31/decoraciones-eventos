@@ -9,9 +9,23 @@ import type { GaleriaProps } from "@/types";
 
 export default function GaleriaImagenes({ MOOKS, tipo }: GaleriaProps) {
     const { columnas, EstructuraImagen, esAltar } = useGaleria({ MOOKS, tipo });
+    const esAltarArray = Array.isArray(MOOKS) && MOOKS.length > 0 && "genero" in MOOKS[0];
+
+    // Total de imágenes
     const totalImagenes = columnas.reduce((total, columna) => total + columna.length, 0);
-    const GridLaptopMax8 = totalImagenes < 9 && totalImagenes > 0 ? "lg:grid-cols-2" : "lg:grid-cols-4"
-    const GridAltoMax4 = totalImagenes < 4 && totalImagenes > 0 ? "min-h-[80dvh]" : ""
+
+    // Clases dinámicas de grid
+    const GridLaptopMax8 =
+        esAltarArray
+            ? totalImagenes < 9 && totalImagenes > 0
+                ? "lg:grid-cols-2"
+                : "lg:grid-cols-4"
+            : "lg:grid-cols-2"; // decoraciones siempre con 2 columnas
+
+    const GridAltoMax4 =
+        esAltarArray && totalImagenes < 4 && totalImagenes > 0
+            ? "min-h-[80dvh]"
+            : "";
 
     return (
         <>
@@ -27,7 +41,7 @@ export default function GaleriaImagenes({ MOOKS, tipo }: GaleriaProps) {
                 {columnas.map((columna, groupIndex) => (
                     <div key={groupIndex} className="flex flex-col gap-4">
                         {columna.map((item, index) => {
-                            const { heightClass, isLazy } = EstructuraImagen({
+                            let { heightClass, isLazy } = EstructuraImagen({
                                 groupIndex,
                                 index,
                                 arrayGaleria: columna,
@@ -35,6 +49,9 @@ export default function GaleriaImagenes({ MOOKS, tipo }: GaleriaProps) {
 
                             const galeria = item.galeria; // item debe ser de tipo GaleriaColumnasProps
 
+                            if (!esAltar(galeria)) {
+                                heightClass = "h-[50dvh]";
+                            }
                             return (
                                 <ImagenGaleria
                                     key={index}
