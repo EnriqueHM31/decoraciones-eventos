@@ -9,9 +9,14 @@ export const useNavegaciones = () => {
         navigate("/");
     }
 
+    const goInicio = () => {
+        window.scrollTo(0, 0)
+    }
+
     return {
         goHome,
-        location
+        location,
+        goInicio
 
     }
 }
