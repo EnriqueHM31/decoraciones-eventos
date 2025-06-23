@@ -4,6 +4,7 @@ import Previsualizacion from "../WhatSapp/Previsualizacion";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
+import ImagenOptimizada from "./ImagenOptimizada";
 
 interface CarruselProps {
     images: string[];
@@ -90,7 +91,12 @@ export default function Carrusel({ images }: CarruselProps) {
                     </button>
                 )
             }
-            <div className="relative w-full max-w-full h-screen md:justify-center flex items-center flex-col py-4 mx-auto overflow-hidden justify-evenly md:max-w-3/4">
+            <div className="relative w-screen max-w-screen h-screen md:justify-center flex items-center flex-col py-4 mx-auto overflow-hidden justify-evenly md:max-w-3/4">
+
+                <div className="fixed top-12 left-8 border border-white bg-primary text-white px-4 py-2 rounded-2xl z-50 flex gap-2 items-center justify-center md:hidden ">
+                    <p>{current + 1} de {images.length}</p>
+                </div>
+
                 <button
                     onClick={handleClickWhatsapp}
                     className="fixed md:bottom-14 bottom-20 md:right-18 btn bg-green-700 hover:bg-green-600 transition-all duration-500 ease-in-out rounded-lg font-bold md:text-md text-white px-4 py-2 z-50 cursor-pointer flex gap-4 items-center justify-center"
@@ -103,7 +109,7 @@ export default function Carrusel({ images }: CarruselProps) {
                 </button>
 
                 <div
-                    className="flex transition-transform max-h-[50dvh] md:max-h-full duration-500 ease-in-out select-none flex-1"
+                    className={`flex transition-transform max-h-[50dvh] md:max-h-full md:w-full md:h-full duration-500 ease-in-out flex-1 ${images.length === 1 ? "justify-center" : ""}`}
                     style={{ transform: `translateX(-${current * 100}%)` }}
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
@@ -112,27 +118,27 @@ export default function Carrusel({ images }: CarruselProps) {
                     onMouseUp={handleMouseUp}
                 >
                     {images.map((img, i) => (
-                        <img
-                            key={i}
-                            src={img}
-                            alt={`Slide ${i + 1}`}
-                            className="w-full max-h-[90dvh] flex-shrink-0 object-contain md:rounded-xl"
-                            draggable={false}
-                        />
+
+                        <ImagenOptimizada key={i} url={img} alt={`Slide ${i + 1}`} clases="w-full min-w-full h-full  my-auto max-h-[90dvh] flex-shrink-0 object-contain md:rounded-xl " />
+
                     ))}
                 </div>
 
 
                 {/* Indicadores */}
-                <div className=" justify-center gap-2 mt-4 bg-black px-4 py-2 rounded-lg w-fit mx-auto md:flex hidden">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => goToSlide(index)}
-                            className={`md:size-3 size-2 rounded-full ${index === current ? "bg-white" : "bg-white/50"}`}
-                        />
-                    ))}
-                </div>
+                {
+                    images.length > 1 && (
+                        <div className=" justify-center gap-2 mt-4 bg-black px-4 py-2 rounded-lg w-fit mx-auto md:flex hidden">
+                            {images.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => goToSlide(index)}
+                                    className={`md:size-3 size-2 rounded-full ${index === current ? "bg-white" : "bg-white/50"}`}
+                                />
+                            ))}
+                        </div>
+                    )
+                }
             </div>
 
 
