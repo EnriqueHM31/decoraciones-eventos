@@ -39,12 +39,12 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
                 >
                     <button
                         onClick={closeOverlay}
-                        className="absolute top-12 border border-white rounded-full md:right-18 right-4 text-white text-4xl z-50 cursor-pointer "
+                        className="absolute top-12 border bg-black border-white rounded-full md:right-18 right-4 text-white text-4xl z-50 cursor-pointer hover:bg-white hover:text-black hover:border-black transition-all duration-500 ease-in-out "
                         title="Cerrar"
                         aria-label="Cerrar modal"
                         type="button"
                     >
-                        <IoClose className="xl:size-16 lg:size-14 size-10 bg-primary rounded-full p-2" />
+                        <IoClose className="xl:size-12 lg:size-14 size-10 rounded-full p-2" />
                     </button>
 
                     <div
