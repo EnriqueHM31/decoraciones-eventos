@@ -1,5 +1,5 @@
 import Navegacion from "@/components/Navegacion";
-import TituloPagina from "@/components/ui/TituloPagina";
+import TituloPagina from "@/components/TituloPagina";
 
 export default function AreasPrincipales() {
     return (
