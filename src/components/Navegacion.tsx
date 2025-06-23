@@ -59,8 +59,7 @@ export default function Navegacion() {
                                         : "text-white"
                                     }`}>
                                     {link.label}
-                                    <span
-                                        className={`absolute bottom-0 left-0 h-[2px] w-full bg-white scale-x-0 origin-right transition-transform duration-500 group-hover:scale-x-100 group-hover:origin-left`}
+                                    <span className={`absolute bottom-0 left-0 h-[2px] w-full bg-white scale-x-0 origin-right transition-transform duration-500 group-hover:scale-x-100 group-hover:origin-left`}
                                     ></span>
                                 </a>
                             </li>
