@@ -466,7 +466,7 @@ export const ALTARESJSON: Altar[] = [
         id: 46,
         imagenes: [
             "https://res.cloudinary.com/dovznesem/image/upload/v1750525486/altar146_146_hxuyp3.webp",
-            "https://res.cloudinary.com/dovznesem/image/upload/v1750525487/altar147_147_u6kjqi.webpg",
+            "https://res.cloudinary.com/dovznesem/image/upload/v1750525487/altar147_147_u6kjqi.webp",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750525488/altar149_149_wp0tmg.webp",
             "https://res.cloudinary.com/dovznesem/image/upload/v1750525488/altar148_148_jrshdg.webp"
         ],
