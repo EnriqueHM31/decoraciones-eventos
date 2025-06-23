@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import SliderImagenes from "@/components/SliderImagenes";
+import SliderImagenes from "@/components/Galeria/SliderImagenes";
 import type { ImagenGaleriaProps } from "@/types";
 
 
