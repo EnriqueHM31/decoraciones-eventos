@@ -3,7 +3,7 @@ import IMAGENEVENTO from "@/assets/img/Hero.webp";
 import ModalEventos from "@/components/ModalEventos";
 import { useModalEventos } from "@/hooks/ModalEventos";
 import SliderImagenes from "@/components/SliderImagenes";
-import TituloPagina from "@/components/ui/TituloPagina";
+import TituloPagina from "@/components/TituloPagina";
 
 export default function Inicio() {
 
