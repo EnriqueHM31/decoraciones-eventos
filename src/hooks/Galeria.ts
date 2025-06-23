@@ -40,7 +40,6 @@ export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
     // Función para determinar estructura visual de cada imagen
     const EstructuraImagen = ({ groupIndex, index, arrayGaleria }: EstructuraImagenProps) => {
 
-        console.log(arrayGaleria?.length);
         if (!arrayGaleria) return { heightClass: "", isLazy: false };
 
         if (arrayGaleria.length === 1) return { heightClass: "sm:h-[60vh]", isLazy: false };
@@ -64,10 +63,25 @@ export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
         return obj !== null && "genero" in obj && "colores" in obj;
     }
 
+    const totalImagenes = columnas.reduce((total, columna) => total + columna.length, 0);
+
+    const clasesGrid =
+        totalImagenes > 0
+            ? `${totalImagenes < 9 ? "lg:grid-cols-2" : "lg:grid-cols-4"} ${totalImagenes < 4 ? "min-h-[80dvh]" : ""
+            }`
+            : "";
+
+    const HAYIMAGENES = columnas.every((columna) => columna.length === 0);
+
+
+
+
     return {
         columnas,
         EstructuraImagen,
-        esAltar
+        esAltar,
+        clasesGrid,
+        HAYIMAGENES
     };
 }
 
