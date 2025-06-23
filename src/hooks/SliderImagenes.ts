@@ -19,6 +19,7 @@ export const useSliderImagenes = () => {
         setIsClosing(false);
     };
 
+
     return {
         selectedImage,
         setSelectedImage,
