@@ -9,15 +9,15 @@ export default function BotonMenu({ toggleAside, tipo }: BotonMenuProps) {
     const { toggleMenu, menuAbierto, animandoCierre } = useMenuOpciones();
 
     return (
-        <div className="fixed bottom-8 right-8 z-50">
+        <div className="fixed bottom-8 right-4 md:bottom-14 md:right-14 z-50">
             <div className="relative">
                 {/* Botón flotante */}
                 <button
                     onClick={toggleMenu}
-                    className="bg-primary text-white p-4 rounded-full shadow-lg"
-                    aria-label="Abrir menú"
+                    className="bg-primary text-white md:p-5 p-4 rounded-full shadow-lg border-white border"
+                    aria-label="Abrir menú "
                 >
-                    <FaBars className="text-xl" />
+                    <FaBars className="text-xl md:text-2xl" />
                 </button>
 
                 {/* Menú flotante animado */}
