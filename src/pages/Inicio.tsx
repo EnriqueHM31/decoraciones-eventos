@@ -39,7 +39,7 @@ export default function Inicio() {
                             Ver Eventos
                         </button>
                     </div>
-                    <picture className="flex-1 h-auto">
+                    <picture className="flex-1 h-full">
                         <ImagenOptimizada url={IMAGENEVENTO} alt={"Imagen de un evento"} clases="mt-0 rounded-none w-screen md:w-full  h-[50dvh] xl:h-screen object-center object-cover" />
                     </picture>
                 </section>
