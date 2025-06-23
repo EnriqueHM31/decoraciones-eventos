@@ -1,5 +1,5 @@
 import { useGaleriaStore } from "@/store/useGaleriaStore";
-import type { EstructuraImagenProps, GaleriaProps, GaleriaColumnasProps, Altar, Decoracion } from "@/types";
+import type { EstructuraImagenProps, GaleriaProps, GaleriaColumnasProps, Altar, Decoracion, AreaPrincipal } from "@/types";
 
 export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
     const { filtroGenero, filtroColores } = useGaleriaStore();
@@ -24,6 +24,13 @@ export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
 
     } if (tipo === "decoraciones") {
         imagenesGaleria = (MOOKS as Decoracion[])
+            .filter((galeria) => galeria.imagenes.length > 0)
+            .map((galeria) => ({
+                galeria,
+                img: galeria.imagenes[0],
+            }));
+    } if (tipo === "areas-principales") {
+        imagenesGaleria = (MOOKS as AreaPrincipal[])
             .filter((galeria) => galeria.imagenes.length > 0)
             .map((galeria) => ({
                 galeria,
@@ -59,8 +66,8 @@ export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
     };
 
 
-    function esAltar(obj: Altar | Decoracion | null): obj is Altar {
-        return obj !== null && "genero" in obj && "colores" in obj;
+    function esAltar(obj: Altar | Decoracion | AreaPrincipal | null): obj is Altar {
+        return obj !== null && "genero" in obj && "colores" in obj || obj !== null && "imagenes" in obj;
     }
 
     const totalImagenes = columnas.reduce((total, columna) => total + columna.length, 0);
@@ -72,9 +79,6 @@ export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
             : "";
 
     const HAYIMAGENES = columnas.every((columna) => columna.length === 0);
-
-
-
 
     return {
         columnas,
