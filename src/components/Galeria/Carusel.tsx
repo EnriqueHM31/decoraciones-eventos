@@ -84,7 +84,7 @@ export default function Carrusel({ images }: CarruselProps) {
                     <button
                         onClick={prevSlide}
                         disabled={current === 0}
-                        className="absolute left-10 top-1/2 -translate-y-1/2 bg-black/50 text-white p-4 rounded-full z-10 disabled:opacity-30 border border-white md:flex hidden"
+                        className={`absolute left-10 top-1/2 -translate-y-1/2 bg-black/50 text-white p-4 rounded-full z-10 disabled:opacity-30 border border-white md:flex hidden ${current !== 0 && "hover:bg-white hover:text-black hover:border-black transition-all duration-500 ease-in-out"}`}
                     >
                         <FaArrowLeft className="md:size-6" />
                     </button>
@@ -141,10 +141,10 @@ export default function Carrusel({ images }: CarruselProps) {
                     <button
                         onClick={nextSlide}
                         disabled={current === images.length - 1}
-                        className="absolute right-20 top-1/2 -translate-y-1/2 bg-black/50 text-white p-4 rounded-full z-10 disabled:opacity-30 border border-white md:flex hidden"
+                        className={`absolute right-20 top-1/2 -translate-y-1/2 bg-black/50 text-white p-4 rounded-full z-10 disabled:opacity-30 border border-white md:flex hidden ${current !== images.length - 1 && "hover:bg-white hover:text-black hover:border-black transition-all duration-500 ease-in-out"}`}
                     >
                         <FaArrowRight className="md:size-6" />
-                    </button>
+                    </button >
                 )
             }
 
