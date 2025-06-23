@@ -1,5 +1,5 @@
 import SinImagenes from "./Galeria/SinImagenes";
-import ZonaFiltros from "./Galeria/ZonaFiltros";
+import ZonaFiltros from "./Filtros/ZonaFiltros";
 import { useGaleria } from "@/hooks/Galeria";
 import ImagenGaleria from "./Galeria/ImagenGaleria";
 import type { GaleriaProps } from "@/types";
