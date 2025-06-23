@@ -35,11 +35,11 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
             {isModalOpen && (
                 <div
                     key="modal"
-                    className="fixed inset-0 h-screen w-screen bg-black/70 backdrop-blur-2xl z-50 flex items-center justify-center py-4 "
+                    className="fixed top-0 left-0 h-screen w-screen bg-black/70 backdrop-blur-2xl z-50 flex items-center justify-center py-4 "
                 >
                     <button
                         onClick={closeOverlay}
-                        className="absolute top-12 border bg-black border-white rounded-full md:right-18 right-4 text-white text-4xl z-50 cursor-pointer hover:bg-white hover:text-black hover:border-black transition-all duration-500 ease-in-out "
+                        className="absolute top-12 border bg-black border-white rounded-full md:right-18 right-8 text-white text-4xl z-50 cursor-pointer hover:bg-white hover:text-black hover:border-black transition-all duration-500 ease-in-out "
                         title="Cerrar"
                         aria-label="Cerrar modal"
                         type="button"
