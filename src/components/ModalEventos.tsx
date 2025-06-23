@@ -1,5 +1,6 @@
 import { SECCIONES_EVENTOS } from "@/assets/ts/constantes";
 import { IoClose } from "react-icons/io5"
+import ImagenOptimizada from "./Galeria/ImagenOptimizada";
 
 
 export default function ModalEventos({ handleViewEventos }: { handleViewEventos: () => void }) {
@@ -21,11 +22,7 @@ export default function ModalEventos({ handleViewEventos }: { handleViewEventos:
                                     href={seccion.to}
                                     className="group relative md:h-40 h-24 rounded-xl  shadow-lg transform hover:scale-105 transition-transform duration-300"
                                 >
-                                    <img
-                                        src={seccion.img}
-                                        alt={seccion.label}
-                                        className="w-full h-full object-cover rounded-xl"
-                                    />
+                                    <ImagenOptimizada url={seccion.img} alt={seccion.label} clases="w-full h-full object-cover rounded-xl" />
                                     <div className="absolute inset-0 bg-black/70 group-hover:bg-black/10 transition duration-300 flex items-center justify-center rounded-xl">
                                         <span className="text-white text-lg font-semibold text-center  md:group-hover:-translate-y-20 group-hover:-translate-y-16  px-4 py-2 rounded-3xl group-hover:bg-primary group-hover:text-white transition-all duration-500 group-hover:text-sm">{seccion.label}</span>
                                     </div>
