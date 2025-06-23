@@ -23,7 +23,7 @@ export default function BotonMenu({ toggleAside, tipo }: BotonMenuProps) {
                 {/* Menú flotante animado */}
                 {(menuAbierto || animandoCierre) && (
                     <div
-                        className={`absolute bottom-full right-0 mb-4 flex flex-col items-end gap-2 z-50
+                        className={`absolute bottom-full right-0 mb-4 flex flex-col items-end gap-2 z-50 bg-black p-2 rounded-2xl
                 ${animandoCierre ? 'animate-fade-out' : 'animate-fade-in'}`}
                     >
                         {tipo === "altares" && toggleAside && (
@@ -32,7 +32,7 @@ export default function BotonMenu({ toggleAside, tipo }: BotonMenuProps) {
                                     toggleAside();
                                     toggleMenu();
                                 }}
-                                className="bg-white text-black px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition min-w-48 flex items-center gap-2"
+                                className="bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-white hover:text-black transition min-w-48 flex items-center gap-2"
                             >
                                 <FaFilter className="inline-block mr-2" />
                                 Filtros
@@ -44,7 +44,7 @@ export default function BotonMenu({ toggleAside, tipo }: BotonMenuProps) {
                                 goInicio();
                                 toggleMenu();
                             }}
-                            className="bg-white text-black px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition min-w-48 flex items-center gap-2"
+                            className="bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-white hover:text-black transition min-w-48 flex items-center gap-2"
                         >
                             <GoMoveToTop className="inline-block mr-2" />
                             Volver al inicio
