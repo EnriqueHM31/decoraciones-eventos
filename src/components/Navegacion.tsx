@@ -5,7 +5,7 @@ import { LINKS } from "@/assets/ts/constantes";
 import IMAGENLOGO from "@/assets/img/Logo.webp";
 import { useNavegaciones } from "@/hooks/Navigate";
 import { useModalEventos } from "@/hooks/ModalEventos";
-import FormularioEmail from "@/components/FormularioEmail";
+import FormularioEmail from "@/components/Email/FormularioEmail";
 
 export default function Navegacion() {
     const { isOpenMenuBurguer, handleClickOpenMenuBurguer, isOpenFormulario, handleClickFormulario, handleSubmit } = useModalEventos();
