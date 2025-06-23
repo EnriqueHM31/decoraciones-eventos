@@ -17,19 +17,22 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
     return (
         <>
             {/* Imagen en el grid, siempre visible */}
-            <motion.img
-                src={images[0]}
-                alt="Imagen principal de la galería"
-                onClick={() => {
-                    setCurrentIndex(0);
-                    handleImageSelected(images[0], 0);
-                }}
-                loading={lazy ? "lazy" : undefined}
-                crossOrigin="anonymous"
-                className={`h-20 w-20 aspect-square max-w-full rounded-lg object-cover object-center cursor-pointer ${styles ?? ""}`}
-                whileTap={{ scale: 0.95 }}
-                layoutId={`imagen-${images[0]}`} // ID único
-            />
+            <div className="w-full h-full overflow-hidden rounded-lg">
+                <motion.img
+                    src={images[0]}
+                    alt="Imagen principal de la galería"
+                    onClick={() => {
+                        setCurrentIndex(0);
+                        handleImageSelected(images[0], 0);
+                    }}
+                    loading={lazy ? "lazy" : undefined}
+                    crossOrigin="anonymous"
+                    className={`w-full h-full object-cover object-center cursor-pointer ${styles ?? ""}`}
+                    whileTap={{ scale: 0.95 }}
+                    layoutId={`imagen-${images[0]}`}
+                />
+            </div>
+
 
             {/* Modal animado */}
             {isModalOpen && (
