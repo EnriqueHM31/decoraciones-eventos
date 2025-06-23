@@ -3,6 +3,7 @@ import IMAGENEVENTO from "@/assets/img/Hero.webp";
 import ModalEventos from "@/components/ModalEventos";
 import { useModalEventos } from "@/hooks/ModalEventos";
 import TituloPagina from "@/components/TituloPagina";
+import ImagenOptimizada from "@/components/Galeria/ImagenOptimizada";
 
 export default function Inicio() {
 
@@ -39,7 +40,7 @@ export default function Inicio() {
                         </button>
                     </div>
                     <picture className="flex-1 h-auto">
-                        <img src={IMAGENEVENTO} alt="Evento" className="mt-0 rounded-none w-full h-screen object-center object-cover" />
+                        <ImagenOptimizada url={IMAGENEVENTO} alt={"Imagen de un evento"} clases="mt-0 rounded-none w-screen md:w-full  h-[50dvh] xl:h-screen object-center object-cover" />
                     </picture>
                 </section>
             </div >
