@@ -29,7 +29,7 @@ export default function ZonaFiltros() {
                 id="zona-filtros-panel"
                 className={`transition-[max-height,opacity] duration-500 ease-in-out
                             ${abierto ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}
-                            md:max-h-full md:opacity-100 md:flex md:flex-wrap md:gap-4 md:items-center md:justify-center
+                            md:max-h-full md:opacity-100 md:flex md:flex-wrap md:gap-4 md:items-center md:justify-center 
                             rounded-md p-4 md:p-0 overflow-hidden gap-2 flex flex-col md:flex-row
                         `}
             >
