@@ -79,17 +79,21 @@ export default function Carrusel({ images }: CarruselProps) {
 
     return (
         <>
-            <button
-                onClick={prevSlide}
-                disabled={current === 0}
-                className="absolute left-10 top-1/2 -translate-y-1/2 bg-black/50 text-white p-4 rounded-full z-10 disabled:opacity-30 border border-white md:flex hidden"
-            >
-                <FaArrowLeft className="md:size-12" />
-            </button>
-            <div className="relative w-full max-w-full h-screen md:justify-center flex items-center flex-col py-4 mx-auto overflow-hidden justify-evenly ">
+            {
+                images.length > 1 && (
+                    <button
+                        onClick={prevSlide}
+                        disabled={current === 0}
+                        className="absolute left-10 top-1/2 -translate-y-1/2 bg-black/50 text-white p-4 rounded-full z-10 disabled:opacity-30 border border-white md:flex hidden"
+                    >
+                        <FaArrowLeft className="md:size-6" />
+                    </button>
+                )
+            }
+            <div className="relative w-full max-w-full h-screen md:justify-center flex items-center flex-col py-4 mx-auto overflow-hidden justify-evenly md:max-w-3/4">
                 <button
                     onClick={handleClickWhatsapp}
-                    className="fixed md:bottom-14 bottom-20 md:right-10 btn bg-green-600 rounded-lg font-bold md:text-md text-white px-4 py-2 z-50 cursor-pointer flex gap-4 items-center justify-center"
+                    className="fixed md:bottom-14 bottom-20 md:right-18 btn bg-green-700 hover:bg-green-600 transition-all duration-500 ease-in-out rounded-lg font-bold md:text-md text-white px-4 py-2 z-50 cursor-pointer flex gap-4 items-center justify-center"
                     aria-label="Enviar WhatsApp"
                     title="Enviar WhatsApp"
                     type="button"
@@ -125,20 +129,24 @@ export default function Carrusel({ images }: CarruselProps) {
                         <button
                             key={index}
                             onClick={() => goToSlide(index)}
-                            className={`md:size-5 size-2 rounded-full ${index === current ? "bg-white" : "bg-white/50"}`}
+                            className={`md:size-3 size-2 rounded-full ${index === current ? "bg-white" : "bg-white/50"}`}
                         />
                     ))}
                 </div>
             </div>
 
 
-            <button
-                onClick={nextSlide}
-                disabled={current === images.length - 1}
-                className="absolute right-20 top-1/2 -translate-y-1/2 bg-black/50 text-white p-4 rounded-full z-10 disabled:opacity-30 border border-white md:flex hidden"
-            >
-                <FaArrowRight className="md:size-12" />
-            </button>
+            {
+                images.length > 1 && (
+                    <button
+                        onClick={nextSlide}
+                        disabled={current === images.length - 1}
+                        className="absolute right-20 top-1/2 -translate-y-1/2 bg-black/50 text-white p-4 rounded-full z-10 disabled:opacity-30 border border-white md:flex hidden"
+                    >
+                        <FaArrowRight className="md:size-6" />
+                    </button>
+                )
+            }
 
 
             {/* Modal de previsualización */}
