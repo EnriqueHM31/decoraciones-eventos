@@ -3,6 +3,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { toast } from "sonner";
+import ImagenOptimizada from "./Galeria/ImagenOptimizada";
 
 
 
@@ -24,7 +25,7 @@ export default function Footer() {
 
                         <section className="flex flex-col h-full ">
                             <div className="flex items-center gap-3 justify-between h-full">
-                                <img src={IMAGENLOGO} alt="logo" className="size-10 lg:size-14 object-cover" />
+                                <ImagenOptimizada url={IMAGENLOGO} alt="logo" clases="w-full h-full object-cover max-w-12" />
                                 <div className="flex flex-col h-full">
 
                                     <h2 className=" text-md font-bold text-white">Decoraciones para tus eventos!</h2>
