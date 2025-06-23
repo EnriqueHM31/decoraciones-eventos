@@ -24,7 +24,7 @@ export default function Filtros() {
                             transform transition-transform duration-300 ease-in-out flex flex-col gap-4 py-10
                             ${asideVisible ? "translate-x-0" : "translate-x-full"}
                             z-50
-                            overflow-y-auto
+                            overflow-y-auto scrollbar-none
                 `}
             >
                 <button
