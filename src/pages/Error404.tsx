@@ -1,5 +1,5 @@
 import IMAGEN404 from "@/assets/img/404.webp";
-import TituloPagina from "@/components/ui/TituloPagina";
+import TituloPagina from "@/components/TituloPagina";
 import { useNavegaciones } from "@/hooks/Navigate";
 
 
