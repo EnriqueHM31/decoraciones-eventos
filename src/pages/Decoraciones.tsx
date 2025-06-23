@@ -2,7 +2,7 @@ import GaleriaImagenes from "@/components/GaleriaImagenes";
 import Navegacion from "@/components/Navegacion";
 import TituloPagina from "@/components/TituloPagina";
 import { DECORACIONESJSON } from "@/assets/mooks/decoraciones";
-import BotonMenu from "@/components/Filtros/BotonAbrirFiltros";
+import BotonMenu from "@/components/Buttons/BotonMenu";
 
 
 export default function Eventos() {
