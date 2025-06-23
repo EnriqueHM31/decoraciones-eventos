@@ -1,4 +1,6 @@
 import IMAGENEVENTO from "@/assets/img/Hero.webp";
+import IMAGENALTAR from "@/assets/img/Altar.webp";
+import IMAGENAREAPRINCIPAL from "@/assets/img/Areas-principales.webp";
 
 export const LINKS = [
     { label: 'Inicio', to: '/' },
@@ -8,7 +10,7 @@ export const LINKS = [
 ]
 
 export const SECCIONES_EVENTOS = [
-    { label: "Altares", img: IMAGENEVENTO, to: "/altares" },
-    { label: "Áreas principales", img: IMAGENEVENTO, to: "/areas-principales" },
+    { label: "Altares", img: IMAGENALTAR, to: "/altares" },
+    { label: "Áreas principales", img: IMAGENAREAPRINCIPAL, to: "/areas-principales" },
     { label: "Decoraciones", img: IMAGENEVENTO, to: "/decoraciones" },
 ];
