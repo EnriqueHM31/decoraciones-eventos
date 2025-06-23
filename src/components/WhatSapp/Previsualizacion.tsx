@@ -10,9 +10,9 @@ export default function Previsualizacion({ mensaje, imagenSeleccionada, handleMe
     )}`;
 
     return (
-        <div className="fixed h-screen w-screen top-0 left-0  backdrop-blur-xl bg-opacity-70 flex justify-center items-center z-100 md:px-0">
+        <div className="fixed h-screen w-screen top-0 left-0  backdrop-blur-xl bg-opacity-70 flex justify-center items-center z-100">
 
-            <div className="bg-black md:border md:border-white rounded-lg md:max-w-4xl w-full md:max-h-[90vh] flex overflow-hidden md:flex-row flex-col justify-center h-full md:h-auto">
+            <div className="bg-black md:border md:border-white rounded-lg md:max-w-4xl w-full flex overflow-hidden md:flex-row flex-col justify-center h-full md:max-h-[50dvh]">
                 {/* Izquierda: Formulario */}
                 <div className="md:w-1/2 p-6 flex flex-col justify-center items-center md:items-start md:justify-start md:order-1 order-2">
 
