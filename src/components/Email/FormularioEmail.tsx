@@ -3,12 +3,13 @@ import IMAGENLOGO from "@/assets/img/Logo.webp";
 import { FaUserCircle } from "react-icons/fa";
 import { SiGooglemessages } from "react-icons/si";
 import { IoClose } from "react-icons/io5";
+import ImagenOptimizada from "../Galeria/ImagenOptimizada";
 
 export default function FormularioEmail({ handleSubmit, handleClickFormulario }: FormularioEmailProps) {
     return (
-        <div className="fixed w-screen h-screen inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
+        <div className="fixed w-screen h-screen inset-0 z-70 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
             <form className=" p-4 rounded-2xl lg:max-w-1/4 w-full bg-primary border border-white relative" onSubmit={(e) => handleSubmit(e)}>
-                <img src={IMAGENLOGO} alt="logo" className="max-w-32 mx-auto" />
+                <ImagenOptimizada url={IMAGENLOGO} alt="logo" clases="max-w-20 mx-auto" />
                 <h2 className="text-center text-md lg:text-lg font-bold text-black/80 bg-white px-4 py-1 rounded-2xl w-fit mx-auto mb-3">Enviar un comentario</h2>
 
                 <label htmlFor="nombre_usuario" className="flex flex-col gap-2 mb-2 text-sm font-medium ">
