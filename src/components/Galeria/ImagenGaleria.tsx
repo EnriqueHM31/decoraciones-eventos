@@ -11,10 +11,10 @@ export default function ImagenGaleria({ altar, decoracion, index, isLazy, height
 
                     <motion.div
                         key={index}
-                        initial={{ opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.5 } }}
-                        whileInView={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.5 } }}
+                        initial={{ opacity: 0, scale: 0.9, y: 30, transition: { duration: 0.3 } }}
+                        whileInView={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.3 } }}
                         transition={{
-                            duration: 0.5,
+                            duration: 0.3,
                             ease: "easeOut",
                             delay: index * 0.1,
                         }}
@@ -24,7 +24,7 @@ export default function ImagenGaleria({ altar, decoracion, index, isLazy, height
                         <SliderImagenes
                             images={altar.imagenes}
                             styles="h-full w-full"
-                            lazy={isLazy}
+                            lazy={isLazy ?? "eager"}
                         />
                     </motion.div>
                 )
@@ -34,10 +34,10 @@ export default function ImagenGaleria({ altar, decoracion, index, isLazy, height
                 decoracion && (
                     <motion.div
                         key={index}
-                        initial={{ opacity: 0, scale: 0.9, y: 50, transition: { duration: 0.5 } }}
-                        whileInView={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.5 } }}
+                        initial={{ opacity: 0, scale: 0.9, y: 30, transition: { duration: 0.3 } }}
+                        whileInView={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.3 } }}
                         transition={{
-                            duration: 0.5,
+                            duration: 0.3,
                             ease: "easeOut",
                             delay: index * 0.1,
                         }}
