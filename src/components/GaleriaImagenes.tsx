@@ -3,69 +3,74 @@ import ZonaFiltros from "./Galeria/ZonaFiltros";
 import { useGaleria } from "@/hooks/Galeria";
 import ImagenGaleria from "./Galeria/ImagenGaleria";
 import type { GaleriaProps } from "@/types";
-
-
-
+import { DECORACIONESJSON } from "@/assets/mooks/decoraciones";
 
 export default function GaleriaImagenes({ MOOKS, tipo }: GaleriaProps) {
-    const { columnas, EstructuraImagen, esAltar } = useGaleria({ MOOKS, tipo });
-    const esAltarArray = Array.isArray(MOOKS) && MOOKS.length > 0 && "genero" in MOOKS[0];
+    const { columnas, EstructuraImagen, clasesGrid, esAltar, HAYIMAGENES } = useGaleria({ MOOKS, tipo });
 
-    // Total de imágenes
-    const totalImagenes = columnas.reduce((total, columna) => total + columna.length, 0);
-
-    // Clases dinámicas de grid
-    const GridLaptopMax8 =
-        esAltarArray
-            ? totalImagenes < 9 && totalImagenes > 0
-                ? "lg:grid-cols-2"
-                : "lg:grid-cols-4"
-            : "lg:grid-cols-2"; // decoraciones siempre con 2 columnas
-
-    const GridAltoMax4 =
-        esAltarArray && totalImagenes < 4 && totalImagenes > 0
-            ? "min-h-[80dvh]"
-            : "";
+    if (HAYIMAGENES) {
+        return (
+            <>
+                <ZonaFiltros />
+                <SinImagenes />
+            </>
+        );
+    }
 
     return (
         <>
             <ZonaFiltros />
+
             {
-                columnas.every((columna) => columna.length === 0) && (
-                    <SinImagenes />
-                )
+                esAltar(columnas[0][0].galeria) ? (
 
-            }
+                    < div className={`grid grid-cols-1 sm:grid-cols-2 ${clasesGrid}  gap-4 md:max-w-11/12 w-full`}>
+                        {columnas.map((columna, groupIndex) => (
+                            <div key={groupIndex} className="flex flex-col gap-4">
+                                {columna.map((item, index) => {
+                                    const galeria = item.galeria;
+                                    const isAltar = esAltar(galeria);
 
-            <div className={`grid grid-cols-1 sm:grid-cols-2 ${GridLaptopMax8}  ${GridAltoMax4} gap-4 md:max-w-11/12 w-full`}>
-                {columnas.map((columna, groupIndex) => (
-                    <div key={groupIndex} className="flex flex-col gap-4">
-                        {columna.map((item, index) => {
-                            let { heightClass, isLazy } = EstructuraImagen({
-                                groupIndex,
-                                index,
-                                arrayGaleria: columna,
-                            });
+                                    const { heightClass, isLazy } = EstructuraImagen({
+                                        groupIndex,
+                                        index,
+                                        arrayGaleria: columna,
+                                    });
 
-                            const galeria = item.galeria; // item debe ser de tipo GaleriaColumnasProps
 
-                            if (!esAltar(galeria)) {
-                                heightClass = "h-[50dvh]";
-                            }
-                            return (
-                                <ImagenGaleria
-                                    key={index}
-                                    altar={esAltar(galeria) ? galeria : undefined}
-                                    decoracion={!esAltar(galeria) ? galeria : undefined}
-                                    index={index}
-                                    heightClass={heightClass}
-                                    isLazy={isLazy}
-                                />
-                            );
-                        })}
+                                    return (
+                                        <ImagenGaleria
+                                            key={index}
+                                            altar={isAltar ? galeria : undefined}
+                                            index={index}
+                                            heightClass={heightClass}
+                                            isLazy={isLazy}
+                                        />
+                                    );
+                                })}
+                            </div>
+                        ))}
+                    </ div>
+                ) : (
+                    < div className={`grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 md:max-w-11/12 w-full`}>
+                        {
+                            DECORACIONESJSON.map((decoracion, index) => (
+                                <div key={index} className="flex flex-col gap-4">
+                                    <ImagenGaleria
+                                        key={index}
+                                        decoracion={decoracion}
+                                        index={index}
+                                        heightClass="h-[50dvh]"
+                                        isLazy={false}
+                                    />
+                                </div>
+                            ))
+                        }
+
                     </div>
-                ))}
-            </div>
+
+                )
+            }
         </>
     );
 }
