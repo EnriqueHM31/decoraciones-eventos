@@ -49,12 +49,9 @@ export const useModalEventos = () => {
 
 
     const handleViewEventos = () => {
-        setVisible(true);
+        setVisible(!visible);
     }
 
-    const handleNotViewEventos = () => {
-        setVisible(false);
-    }
 
     const handleClickOpenMenuBurguer = () => {
         setIsOpenMenuBurguer(!isOpenMenuBurguer);
@@ -64,7 +61,6 @@ export const useModalEventos = () => {
     return {
         visible,
         handleViewEventos,
-        handleNotViewEventos,
         isOpenMenuBurguer,
         handleClickOpenMenuBurguer,
         isOpenFormulario,
