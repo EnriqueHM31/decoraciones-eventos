@@ -1,6 +1,6 @@
 import Navegacion from "@/components/Navegacion";
 import GaleriaImagenes from "@/components/GaleriaImagenes";
-import Filtros from "@/components/Filtros";
+import Filtros from "@/components/Filtros/Filtros";
 import { ALTARESJSON } from "@/assets/mooks/altares";
 import TituloPagina from "@/components/TituloPagina";
 
