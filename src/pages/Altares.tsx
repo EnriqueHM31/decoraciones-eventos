@@ -11,7 +11,7 @@ export default function Altares() {
             <TituloPagina titulo="Altares" />
             <Navegacion />
 
-            <section className="flex flex-col items-center justify-center gap-1 md:gap-7 py-2 md:py-10 px-2 w-full ">
+            <section className="flex flex-col items-center justify-center gap-1 md:gap-7 py-8 md:py-10 px-2 w-full ">
                 <Filtros />
                 <GaleriaImagenes MOOKS={MOOKS} tipo="altares" />
             </section>
