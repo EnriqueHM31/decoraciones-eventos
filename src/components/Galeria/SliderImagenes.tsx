@@ -26,7 +26,7 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
                 }}
                 loading={lazy ? "lazy" : undefined}
                 crossOrigin="anonymous"
-                className={`h-auto w-full aspect-square max-w-full rounded-lg object-cover object-center cursor-pointer ${styles ?? ""}`}
+                className={`h-20 w-20 aspect-square max-w-full rounded-lg object-cover object-center cursor-pointer ${styles ?? ""}`}
                 whileTap={{ scale: 0.95 }}
                 layoutId={`imagen-${images[0]}`} // ID único
             />
