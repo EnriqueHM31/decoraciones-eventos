@@ -48,7 +48,7 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
                     </button>
 
                     <div
-                        className="w-full md:max-w-4/5 h-auto rounded-lg shadow-lg overflow-hidden"
+                        className="w-full md:max-w-4/5 h-full rounded-lg shadow-lg overflow-hidden"
                     >
                         <Carrusel images={images} />
                     </div>
