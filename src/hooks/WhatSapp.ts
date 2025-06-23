@@ -8,7 +8,7 @@ export function useWhatsapp({ images, current }: HooksWhatsappProps) {
     const imagenSeleccionada = images[ImagenWhat ?? 0];
 
     const handleClickWhatsapp = () => {
-        const index = current - 1;
+        const index = current;
         setImagenWhat(index);
         setModalOpen(true);
     }
