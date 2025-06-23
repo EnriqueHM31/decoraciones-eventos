@@ -6,6 +6,7 @@ import IMAGENLOGO from "@/assets/img/Logo.webp";
 import { useNavegaciones } from "@/hooks/Navigate";
 import { useModalEventos } from "@/hooks/ModalEventos";
 import FormularioEmail from "@/components/Email/FormularioEmail";
+import ImagenOptimizada from "./Galeria/ImagenOptimizada";
 
 export default function Navegacion() {
     const { isOpenMenuBurguer, handleClickOpenMenuBurguer, isOpenFormulario, handleClickFormulario, handleSubmit } = useModalEventos();
@@ -25,7 +26,8 @@ export default function Navegacion() {
                 <nav className="flex justify-between items-center xl:max-w-11/12 lg:max-w-11/12 max-w-full px-5 lg:px-4 xl:px-0 w-full py-3">
                     {/* Logo y Título */}
                     <div className="text-xl: text-white flex items-center gap-2 ">
-                        <img src={IMAGENLOGO} alt="logo" className="max-w-14" />
+                        <ImagenOptimizada url={IMAGENLOGO} alt="logo" clases="size-14 max-w-14 max-h-14" />
+
                         <span className="font-bold xl:text-xl: text-sm max-w-1/2 xl:max-w-full">
                             Decoraciones para Eventos
                         </span>
