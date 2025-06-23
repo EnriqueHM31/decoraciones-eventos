@@ -2,7 +2,7 @@ import Navegacion from "@/components/Navegacion";
 import IMAGENEVENTO from "@/assets/img/Hero.webp";
 import ModalEventos from "@/components/ModalEventos";
 import { useModalEventos } from "@/hooks/ModalEventos";
-import SliderImagenes from "@/components/SliderImagenes";
+import SliderImagenes from "@/components/Galeria/SliderImagenes";
 import TituloPagina from "@/components/TituloPagina";
 
 export default function Inicio() {
