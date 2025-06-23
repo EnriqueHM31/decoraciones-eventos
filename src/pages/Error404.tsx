@@ -1,4 +1,5 @@
 import IMAGEN404 from "@/assets/img/404.webp";
+import ImagenOptimizada from "@/components/Galeria/ImagenOptimizada";
 import TituloPagina from "@/components/TituloPagina";
 import { useNavegaciones } from "@/hooks/Navigate";
 
@@ -32,7 +33,7 @@ export default function Error404() {
                     </button>
                 </div>
                 <picture className=" xl:max-h-3/4 max-h-full">
-                    <img src={IMAGEN404} alt="logo" className="xl:max-h-3/4 max-h-full object-cover object-right" />
+                    <ImagenOptimizada url={IMAGEN404} alt="logo" clases="xl:max-h-3/4 max-h-full object-cover object-right" />
                 </picture>
             </section>
 
