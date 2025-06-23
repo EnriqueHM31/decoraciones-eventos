@@ -9,6 +9,6 @@ export const LINKS = [
 
 export const SECCIONES_EVENTOS = [
     { label: "Altares", img: IMAGENEVENTO, to: "/altares" },
-    { label: "Áreas principales", img: IMAGENEVENTO, to: "/areas" },
-    { label: "Eventos", img: IMAGENEVENTO, to: "/eventos" },
+    { label: "Áreas principales", img: IMAGENEVENTO, to: "/areas-principales" },
+    { label: "Decoraciones", img: IMAGENEVENTO, to: "/decoraciones" },
 ];
