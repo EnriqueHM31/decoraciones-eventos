@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import { lazy, Suspense } from "react";
 import type { ImageOverlayGalleryProps } from "@/types";
 import { useSliderImagenes } from "@/hooks/SliderImagenes";
 import { IoClose } from "react-icons/io5";
-import Carrusel from "@/components/Galeria/Carusel";
+const Carrusel = lazy(() => import("@/components/Galeria/Carusel"));
 
 export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGalleryProps) {
     const {
@@ -50,11 +51,11 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
                         <IoClose className="xl:size-12 lg:size-14 size-10 rounded-full p-2" />
                     </button>
 
-                    <div
-                        className="w-full md:max-w-4/5 h-full rounded-lg shadow-lg overflow-hidden"
-                    >
-                        <Carrusel images={images} />
-                    </div>
+                    <Suspense fallback={<div className="text-white">Cargando galería...</div>}>
+                        <div className="w-full md:max-w-4/5 h-full rounded-lg shadow-lg overflow-hidden">
+                            <Carrusel images={images} />
+                        </div>
+                    </Suspense>
 
                 </div>
 
