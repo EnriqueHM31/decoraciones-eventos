@@ -91,9 +91,9 @@ export default function Carrusel({ images }: CarruselProps) {
                     </button>
                 )
             }
-            <div className="relative w-screen max-w-screen h-11/12 md:justify-center flex items-center flex-col py-4 mx-auto overflow-hidden justify-evenly md:max-w-3/4 border-none  my-auto">
+            <div className="relative w-screen md:h-11/12 h-screen md:justify-center flex items-center flex-col py-4 mx-auto overflow-hidden justify-center md:max-w-3/4 border-none  }">
 
-                <div className="w-full h-10/12">
+                <div className="w-full h-10/12 flex items-center justify-center">
 
                     <div className="fixed top-12 left-8 border border-white bg-primary text-white px-4 py-2 rounded-2xl z-50 flex gap-2 items-center justify-center md:hidden  ">
                         <p>{current + 1} de {images.length}</p>
@@ -101,7 +101,7 @@ export default function Carrusel({ images }: CarruselProps) {
 
                     <button
                         onClick={handleClickWhatsapp}
-                        className="fixed md:bottom-14 bottom-20 md:right-18 left-1/2 translate-x-[-50%] md:translate-x-0 bg-green-700 hover:bg-green-600 transition-all duration-500 ease-in-out rounded-lg font-bold md:text-md text-white px-4 py-2 z-50 cursor-pointer flex gap-2 items-center justify-center w-fit md:w-auto whitespace-nowrap"
+                        className="fixed md:bottom-14 bottom-20 md:right-18 md:left-auto left-1/2 translate-x-[-50%] md:translate-x-0 bg-green-700 hover:bg-green-600 transition-all duration-500 ease-in-out rounded-lg font-bold md:text-md text-white px-4 py-2 z-50 cursor-pointer flex gap-2 items-center justify-center w-fit  whitespace-nowrap md:w-fit"
                         aria-label="Enviar WhatsApp"
                         title="Enviar WhatsApp"
                         type="button"
@@ -112,7 +112,7 @@ export default function Carrusel({ images }: CarruselProps) {
 
 
                     <div
-                        className={`flex transition-transform h-3/4 w-full  md:max-h-full md:w-full md:h-full duration-500 ease-in-out flex-1 ${images.length === 1 ? "justify-center" : ""}`}
+                        className={`flex transition-transform h-3/4 w-full  md:max-h-full md:w-full md:h-full  duration-500 ease-in-out flex-1 ${images.length === 1 ? "justify-center" : ""}`}
                         style={{ transform: `translateX(-${current * 100}%)` }}
                         onTouchStart={handleTouchStart}
                         onTouchMove={handleTouchMove}
