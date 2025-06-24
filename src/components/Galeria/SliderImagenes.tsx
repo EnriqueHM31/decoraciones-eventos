@@ -18,7 +18,7 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
     return (
         <>
             {/* Imagen en el grid, siempre visible */}
-            <div className="w-full h-full overflow-hidden rounded-lg">
+            <div className="w-full h-full overflow-hidden rounded-lg border-none">
                 <motion.img
                     src={images[0]}
                     alt="Imagen principal de la galería"
@@ -30,7 +30,7 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
                     crossOrigin="anonymous"
                     width={400}
                     height={400}
-                    className={` object-cover object-center cursor-pointer ${styles ?? ""}`}
+                    className={` object-cover object-center cursor-pointer w-full h-full ${styles ?? ""}`}
                     whileTap={{ scale: 0.95 }}
                     layoutId={`imagen-${images[0]}`}
                 />
@@ -41,7 +41,7 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
             {isModalOpen && (
                 <div
                     key="modal"
-                    className="fixed top-0 left-0 h-screen w-screen bg-black/70 backdrop-blur-2xl z-50 flex items-center justify-center py-4 "
+                    className="fixed top-0 left-0 h-screen w-screen bg-black/70 backdrop-blur-2xl z-50 flex items-center justify-center py-4 border-none "
                 >
                     <button
                         onClick={closeOverlay}
@@ -54,9 +54,7 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
                     </button>
 
                     <Suspense fallback={<div className="text-white">Cargando galería...</div>}>
-                        <div className="w-full md:max-w-4/5 h-full rounded-lg shadow-lg overflow-hidden">
-                            <Carrusel images={images} />
-                        </div>
+                        <Carrusel images={images} />
                     </Suspense>
 
                 </div>

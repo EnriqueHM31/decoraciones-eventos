@@ -34,7 +34,7 @@ export default function Navegacion() {
                     </div>
 
                     <ul
-                        className={`items-center justify-between xl:justify-center 
+                        className={`items-center justify-between xl:justify-end 
                             absolute top-24 xl:top-0 left-1/2 xl:left-0 -translate-x-1/2 xl:translate-none
                             shadow rounded-xl
                             bg-primary
@@ -53,9 +53,9 @@ export default function Navegacion() {
                         {LINKS.map((link, index) => (
                             <li
                                 key={index}
-                                className="w-full flex"
+                                className="flex w-full xl:w-fit xl:static "
                             >
-                                <a href={link.to} className={`group relative xl:text-xl: px-3 xl:py-1 py-2 hover:-translate-y-2.5 duration-500 transition-all w-full text-center xl:w-fit  flex-1
+                                <a href={link.to} className={`group relative xl:text-xl: px-3 xl:py-1 py-2 hover:-translate-y-2.5 duration-500 transition-all w-full text-center xl:w-fit
                                     ${location.pathname === link.to
                                         ? "bg-white text-primary font-bold xl:bg-transparent xl:text-white "
                                         : "text-white"

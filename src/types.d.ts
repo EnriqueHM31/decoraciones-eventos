@@ -1,8 +1,7 @@
 
 export type FiltroGenero = "Hombre" | "Mujer" | "Santos" | "Mixto" | null;
 
-export type Galeria = Altar[] | Decoracion[] | AreaPrincipal[] | null
-
+export type Galeria = Altar[] | Decoracion[] | AreaPrincipal[]
 export interface GaleriaProps {
     MOOKS: Galeria;
     tipo: string;
@@ -10,7 +9,6 @@ export interface GaleriaProps {
 
 export interface GaleriaColumnasProps {
     galeria: Altar | Decoracion | AreaPrincipal;
-    img: string
 }
 
 export interface Altar {
@@ -67,11 +65,9 @@ export interface PlaceholdersGridProps {
 }
 
 export interface ImagenGaleriaProps {
-    altar?: Altar | undefined;
-    decoracion?: Decoracion | undefined;
+    galeriaImagenes: Altar | Decoracion | AreaPrincipal
     index: number;
     isLazy: boolean;
-    heightClass: string;
 }
 
 export interface ImagenesCarruselProps {

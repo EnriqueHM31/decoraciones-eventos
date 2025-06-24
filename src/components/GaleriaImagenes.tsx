@@ -1,14 +1,38 @@
+import { useEffect, useRef, useState } from "react";
 import SinImagenes from "./Galeria/SinImagenes";
 import ZonaFiltros from "./Filtros/ZonaFiltros";
 import { useGaleria } from "@/hooks/Galeria";
 import ImagenGaleria from "./Galeria/ImagenGaleria";
 import type { GaleriaProps } from "@/types";
-import { DECORACIONESJSON } from "@/assets/mooks/decoraciones";
 
 export default function GaleriaImagenes({ MOOKS, tipo }: GaleriaProps) {
-    const { columnas, EstructuraImagen, clasesGrid, esAltar, HAYIMAGENES } = useGaleria({ MOOKS, tipo });
+    const { HAYIMAGENES, imagenesGaleria } = useGaleria({ MOOKS, tipo });
 
-    if (HAYIMAGENES) {
+    const [visibleCount, setVisibleCount] = useState(20);
+    const loadMoreRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setVisibleCount((prev) => prev + 20);
+                }
+            },
+            {
+                rootMargin: "100px",
+            }
+        );
+
+        const current = loadMoreRef.current;
+        if (current) observer.observe(current);
+
+        return () => {
+            if (current) observer.unobserve(current);
+        };
+    }, []);
+
+    if (!HAYIMAGENES) {
+        console.log("sin imagenes");
         return (
             <>
                 <ZonaFiltros />
@@ -17,60 +41,22 @@ export default function GaleriaImagenes({ MOOKS, tipo }: GaleriaProps) {
         );
     }
 
+    const imagenesVisibles = imagenesGaleria.slice(0, visibleCount);
+
     return (
         <>
             <ZonaFiltros />
 
-            {
-                esAltar(columnas[0][0].galeria) ? (
+            <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 max-w-11/12s md:max-w-10/12 mx-auto py-10">
+                {imagenesVisibles.map(({ galeria }, index) => (
+                    <article key={index}>
+                        <ImagenGaleria galeriaImagenes={galeria} index={index} isLazy={false} />
+                    </article>
+                ))}
+            </section>
 
-                    < div className={`grid grid-cols-1 sm:grid-cols-2 ${clasesGrid}  gap-4 md:max-w-11/12 w-full mx-auto justify-center`}>
-                        {columnas.map((columna, groupIndex) => (
-                            <div key={groupIndex} className="flex flex-col gap-4">
-                                {columna.map((item, index) => {
-                                    const galeria = item.galeria;
-                                    const isAltar = esAltar(galeria);
-
-                                    const { heightClass, isLazy } = EstructuraImagen({
-                                        groupIndex,
-                                        index,
-                                        arrayGaleria: columna,
-                                    });
-
-
-                                    return (
-                                        <ImagenGaleria
-                                            key={index}
-                                            altar={isAltar ? galeria : undefined}
-                                            index={index}
-                                            heightClass={heightClass}
-                                            isLazy={isLazy}
-                                        />
-                                    );
-                                })}
-                            </div>
-                        ))}
-                    </ div>
-                ) : (
-                    < div className={`grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 md:max-w-11/12 w-full`}>
-                        {
-                            DECORACIONESJSON.map((decoracion, index) => (
-                                <div key={index} className="flex flex-col gap-4">
-                                    <ImagenGaleria
-                                        key={index}
-                                        decoracion={decoracion}
-                                        index={index}
-                                        heightClass="h-[50dvh]"
-                                        isLazy={false}
-                                    />
-                                </div>
-                            ))
-                        }
-
-                    </div>
-
-                )
-            }
+            {/* Punto de referencia para cargar más */}
+            <div ref={loadMoreRef} className="h-10" />
         </>
     );
 }
