@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 
 # Opcional: indica dónde estaría el sitemap
-# Sitemap: https://decoraciones-eventos.vercel.app/sitemap.xml
+# Sitemap: https://decoraciones-para-eventos.vercel.app/sitemap.xml
