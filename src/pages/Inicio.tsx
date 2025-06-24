@@ -11,7 +11,7 @@ export default function Inicio() {
 
     return (
         <>
-            <TituloPagina titulo="Decoraciones para Evenetos" />
+            <TituloPagina titulo="Decoraciones para Eventos" />
             {
                 visible && (
                     <ModalEventos handleViewEventos={handleViewEventos} />
