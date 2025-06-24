@@ -74,7 +74,7 @@ export function useGaleria({ MOOKS, tipo }: GaleriaProps) {
 
     const clasesGrid =
         totalImagenes > 0
-            ? `${totalImagenes < 9 ? "lg:grid-cols-2" : " lg:grid-cols-[400px_400px_400px_400px]"} ${totalImagenes < 4 ? "min-h-[80dvh]" : ""
+            ? `${totalImagenes < 9 ? "lg:grid-cols-2" : " lg:grid-cols-4"} ${totalImagenes < 4 ? "min-h-[80dvh]" : ""
             }`
             : "";
 
