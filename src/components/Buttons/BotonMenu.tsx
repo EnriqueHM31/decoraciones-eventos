@@ -1,7 +1,7 @@
-import { useNavegaciones } from "@/hooks/Navigate";
+import { useNavegaciones } from "@/hooks/useNavigate";
 import { FaFilter, FaBars } from "react-icons/fa";
 import { GoMoveToTop } from "react-icons/go";
-import { useMenuOpciones } from "@/hooks/MenuOpciones";
+import { useMenuOpciones } from "@/hooks/useMenuOpciones";
 import type { BotonMenuProps } from "@/types";
 
 export default function BotonMenu({ toggleAside, tipo }: BotonMenuProps) {

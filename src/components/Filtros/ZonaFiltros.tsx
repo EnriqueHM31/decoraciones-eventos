@@ -2,7 +2,7 @@ import { useGaleriaStore } from "@/store/useGaleriaStore";
 import { coloresDisponibles, generosDisponibles } from "@/assets/ts/filtros";
 import EtiquetaFiltroGenero from "./EtiquetaFiltroGenero";
 import ZonaButtonAbrirFiltros from "../Buttons/ZonaButtonAbrirFiltros";
-import { useZonaFiltros } from "@/hooks/ZonaFiltros";
+import { useZonaFiltros } from "@/hooks/useZonaFiltros";
 import EtiquetaFiltroColor from "./EtiquetaFiltroColor";
 import ZonaButtonQuitarFiltros from "../Buttons/ZonaButtonQuitarFiltros";
 

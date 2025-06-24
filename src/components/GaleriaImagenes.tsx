@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import SinImagenes from "./Galeria/SinImagenes";
 import ZonaFiltros from "./Filtros/ZonaFiltros";
-import { useGaleria } from "@/hooks/Galeria";
+import { useGaleria } from "@/hooks/useGaleria";
 import CardAnimacion from "./Galeria/CardAnimacion";
 import type { GaleriaProps } from "@/types";
 

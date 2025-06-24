@@ -1,7 +1,7 @@
 import Navegacion from "@/components/Navegacion";
 import IMAGENEVENTO from "@/assets/img/Hero.webp";
 import ModalEventos from "@/components/ModalEventos";
-import { useModalEventos } from "@/hooks/ModalEventos";
+import { useModalEventos } from "@/hooks/useModalEventos";
 import TituloPagina from "@/components/TituloPagina";
 import ImagenOptimizada from "@/components/Galeria/ImagenOptimizada";
 

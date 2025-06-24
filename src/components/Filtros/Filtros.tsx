@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 import FiltroColores from "./FiltroColores";
 import FiltroGenero from "./FiltroGenero";
 import BotonAbrirFiltros from "../Buttons/BotonMenu";
-import useFiltros from "@/hooks/Filtros";
+import useFiltros from "@/hooks/useFiltros";
 
 
 

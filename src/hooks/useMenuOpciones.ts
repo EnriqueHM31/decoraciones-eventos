@@ -10,7 +10,7 @@ export function useMenuOpciones() {
             setTimeout(() => {
                 setMenuAbierto(false);
                 setAnimandoCierre(false);
-            }, 300); // mismo tiempo que tu animación
+            }, 300);
         } else {
             setMenuAbierto(true);
         }

@@ -1,7 +1,7 @@
 import IMAGEN404 from "@/assets/img/404.webp";
 import ImagenOptimizada from "@/components/Galeria/ImagenOptimizada";
 import TituloPagina from "@/components/TituloPagina";
-import { useNavegaciones } from "@/hooks/Navigate";
+import { useNavegaciones } from "@/hooks/useNavigate";
 
 
 export default function Error404() {

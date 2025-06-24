@@ -1,4 +1,4 @@
-import { useWhatsapp } from "@/hooks/WhatSapp";
+import { useWhatsapp } from "@/hooks/useWhatSapp";
 import Previsualizacion from "../WhatSapp/Previsualizacion";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";

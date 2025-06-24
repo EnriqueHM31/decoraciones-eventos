@@ -1,4 +1,4 @@
-import { useZonaFiltros } from "@/hooks/ZonaFiltros";
+import { useZonaFiltros } from "@/hooks/useZonaFiltros";
 import { useGaleriaStore } from "@/store/useGaleriaStore";
 
 export default function ZonaButtonQuitarFiltros() {

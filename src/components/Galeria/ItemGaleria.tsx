@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { lazy, Suspense } from "react";
 import type { ImageOverlayGalleryProps } from "@/types";
-import { useSliderImagenes } from "@/hooks/SliderImagenes";
+import { useSliderImagenes } from "@/hooks/useSliderImagenes";
 import { IoClose } from "react-icons/io5";
 const Carrusel = lazy(() => import("@/components/Galeria/Carusel"));
 

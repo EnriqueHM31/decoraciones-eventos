@@ -3,7 +3,7 @@ import { IoMdMan, IoMdWoman } from "react-icons/io";
 import { GiChurch } from "react-icons/gi";
 import { FaUserFriends } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import { useZonaFiltros } from "@/hooks/ZonaFiltros";
+import { useZonaFiltros } from "@/hooks/useZonaFiltros";
 import type { GeneroProps } from "@/types";
 
 const iconosGenero = {

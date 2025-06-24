@@ -3,8 +3,8 @@ import { IoClose } from "react-icons/io5";
 import { FaRegComments } from "react-icons/fa";
 import { LINKS } from "@/assets/ts/constantes";
 import IMAGENLOGO from "@/assets/img/Logo.webp";
-import { useNavegaciones } from "@/hooks/Navigate";
-import { useModalEventos } from "@/hooks/ModalEventos";
+import { useNavegaciones } from "@/hooks/useNavigate";
+import { useModalEventos } from "@/hooks/useModalEventos";
 import FormularioEmail from "@/components/Email/FormularioEmail";
 import ImagenOptimizada from "./Galeria/ImagenOptimizada";
 
