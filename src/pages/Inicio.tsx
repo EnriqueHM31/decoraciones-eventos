@@ -11,7 +11,7 @@ export default function Inicio() {
 
     return (
         <>
-            <TituloPagina titulo="Decoraciones para Eventos JJ" />
+            <TituloPagina titulo="Decoraciones para Eventos JJ JJ" />
             {
                 visible && (
                     <ModalEventos handleViewEventos={handleViewEventos} />
@@ -23,7 +23,7 @@ export default function Inicio() {
 
                 <section className="flex xl:flex-row flex-col items-center justify-center gap-6 mx-auto h-full pt-6 xl:pt-0">
                     <div className="flex-1 flex gap-6 flex-col xl:px-16 xl:items-start items-center px-4">
-                        <h1 className="text-black xl:text-5xl lg:text-2xl font-bold text-3xl xl:text-start text-center">Decoraciones para Eventos</h1>
+                        <h1 className="text-black xl:text-5xl lg:text-2xl font-bold text-3xl xl:text-start text-center">Decoraciones para Eventos JJ</h1>
                         <p className="text-black xl:text-lg text-sm">
                             Nos especializamos en decoración con entelado elegante y el uso creativo de series de luces LED para crear ambientes mágicos y sofisticados. Desde bodas y XV años, cuidamos cada detalle para que tu celebración brille con estilo propio.
                         </p>

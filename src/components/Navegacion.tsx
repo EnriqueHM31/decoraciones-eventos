@@ -29,7 +29,7 @@ export default function Navegacion() {
                         <ImagenOptimizada url={IMAGENLOGO} alt="logo" clases="size-14 max-w-14 max-h-14" />
 
                         <span className="font-bold xl:text-xl: text-sm max-w-1/2 xl:max-w-full">
-                            Decoraciones para Eventos
+                            Decoraciones para Eventos JJ
                         </span>
                     </div>
 
