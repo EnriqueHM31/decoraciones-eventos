@@ -30,7 +30,7 @@ export default function SliderImagenes({ lazy, images, styles }: ImageOverlayGal
                     crossOrigin="anonymous"
                     width={400}
                     height={400}
-                    className={`w-full h-full object-cover object-center cursor-pointer ${styles ?? ""}`}
+                    className={` object-cover object-center cursor-pointer ${styles ?? ""}`}
                     whileTap={{ scale: 0.95 }}
                     layoutId={`imagen-${images[0]}`}
                 />
