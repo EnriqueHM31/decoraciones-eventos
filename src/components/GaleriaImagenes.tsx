@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import SinImagenes from "./Galeria/SinImagenes";
 import ZonaFiltros from "./Filtros/ZonaFiltros";
 import { useGaleria } from "@/hooks/Galeria";
-import ImagenGaleria from "./Galeria/ImagenGaleria";
+import CardAnimacion from "./Galeria/CardAnimacion";
 import type { GaleriaProps } from "@/types";
 
 export default function GaleriaImagenes({ MOOKS, tipo }: GaleriaProps) {
@@ -50,7 +50,7 @@ export default function GaleriaImagenes({ MOOKS, tipo }: GaleriaProps) {
             <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 max-w-11/12s md:max-w-10/12 mx-auto py-10">
                 {imagenesVisibles.map(({ galeria }, index) => (
                     <article key={index}>
-                        <ImagenGaleria galeriaImagenes={galeria} index={index} isLazy={false} />
+                        <CardAnimacion galeriaImagenes={galeria} index={index} isLazy={false} />
                     </article>
                 ))}
             </section>
