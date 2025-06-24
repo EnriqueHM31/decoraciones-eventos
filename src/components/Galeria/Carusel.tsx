@@ -1,10 +1,10 @@
 import { useWhatsapp } from "@/hooks/WhatSapp";
-import { useState, useRef } from "react";
 import Previsualizacion from "../WhatSapp/Previsualizacion";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import ImagenOptimizada from "./ImagenOptimizada";
+import { useCarrusel } from "@/hooks/useCarrusel";
 
 interface CarruselProps {
     images: string[];
@@ -12,71 +12,10 @@ interface CarruselProps {
 
 export default function Carrusel({ images }: CarruselProps) {
 
-
-    const [current, setCurrent] = useState(0);
+    const { current, handleTouchStart, handleTouchMove, handleTouchEnd, handleMouseDown, handleMouseUp, nextSlide, prevSlide, goToSlide } = useCarrusel({ images });
 
     const { modalOpen, handleClickWhatsapp, handleMensaje, handleClickCloseWhatsapp, mensaje, imagenSeleccionada, } = useWhatsapp({ images, current });
-    const touchStartX = useRef<number | null>(null);
-    const touchEndX = useRef<number | null>(null);
-    const mouseDownX = useRef<number | null>(null);
-    const mouseUpX = useRef<number | null>(null);
 
-    const nextSlide = () => {
-        if (current < images.length - 1) {
-            setCurrent((prev) => prev + 1);
-        }
-    };
-
-    const prevSlide = () => {
-        if (current > 0) {
-            setCurrent((prev) => prev - 1);
-        }
-    };
-
-    const goToSlide = (index: number) => {
-        setCurrent(index);
-    };
-
-    // Soporte para touch (móvil)
-    const handleTouchStart = (e: React.TouchEvent) => {
-        touchStartX.current = e.touches[0].clientX;
-    };
-
-    const handleTouchMove = (e: React.TouchEvent) => {
-        touchEndX.current = e.touches[0].clientX;
-    };
-
-    const handleTouchEnd = () => {
-        if (
-            touchStartX.current !== null &&
-            touchEndX.current !== null
-        ) {
-            const distance = touchStartX.current - touchEndX.current;
-            if (distance > 50) nextSlide();
-            else if (distance < -50) prevSlide();
-        }
-        touchStartX.current = null;
-        touchEndX.current = null;
-    };
-
-    // Soporte para mouse (desktop)
-    const handleMouseDown = (e: React.MouseEvent) => {
-        mouseDownX.current = e.clientX;
-    };
-
-    const handleMouseUp = (e: React.MouseEvent) => {
-        mouseUpX.current = e.clientX;
-        if (
-            mouseDownX.current !== null &&
-            mouseUpX.current !== null
-        ) {
-            const distance = mouseDownX.current - mouseUpX.current;
-            if (distance > 50) nextSlide();
-            else if (distance < -50) prevSlide();
-        }
-        mouseDownX.current = null;
-        mouseUpX.current = null;
-    };
 
     return (
         <>
@@ -109,8 +48,6 @@ export default function Carrusel({ images }: CarruselProps) {
                         <FaWhatsapp className="md:size-10 size-7 text-white" />
                         Enviar Mensaje
                     </button>
-
-
                     <div
                         className={`flex transition-transform h-3/4 w-full  md:max-h-full md:w-full md:h-full  duration-500 ease-in-out flex-1 ${images.length === 1 ? "justify-center" : ""}`}
                         style={{ transform: `translateX(-${current * 100}%)` }}
