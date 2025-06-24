@@ -1,9 +1,9 @@
 import { useGaleriaStore } from "@/store/useGaleriaStore";
 import { coloresDisponibles, generosDisponibles } from "@/assets/ts/filtros";
-import ZonaFiltroGenero from "./ZonaFiltroGenero";
+import EtiquetaFiltroGenero from "./EtiquetaFiltroGenero";
 import ZonaButtonAbrirFiltros from "../Buttons/ZonaButtonAbrirFiltros";
 import { useZonaFiltros } from "@/hooks/ZonaFiltros";
-import ZonaFiltroColores from "./ZonaFiltroColores";
+import EtiquetaFiltroColor from "./EtiquetaFiltroColor";
 import ZonaButtonQuitarFiltros from "../Buttons/ZonaButtonQuitarFiltros";
 
 
@@ -42,7 +42,7 @@ export default function ZonaFiltros() {
 
                 {/* Filtro de género */}
                 {filtroGenero && generoActivo && (
-                    <ZonaFiltroGenero generoActivo={generoActivo} />
+                    <EtiquetaFiltroGenero generoActivo={generoActivo} />
                 )}
 
                 {/* Filtros de colores */}
@@ -52,7 +52,7 @@ export default function ZonaFiltros() {
                     const { nombre, clase, texto, bordeCirculo } = colorActivo;
 
                     return (
-                        <ZonaFiltroColores key={index} nombre={nombre} clase={clase} texto={texto} bordeCirculo={bordeCirculo} />
+                        <EtiquetaFiltroColor key={index} nombre={nombre} clase={clase} texto={texto} bordeCirculo={bordeCirculo} />
                     );
                 })}
 
