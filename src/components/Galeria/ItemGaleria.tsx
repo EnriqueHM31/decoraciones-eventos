@@ -41,16 +41,16 @@ export default function ItemGaleria({ lazy, images, styles }: ImageOverlayGaller
             {isModalOpen && (
                 <div
                     key="modal"
-                    className="fixed top-0 left-0 h-screen w-screen bg-black/70 backdrop-blur-2xl z-50 flex items-center justify-center py-4 border-none "
+                    className="fixed top-0 left-0 h-[100vh] w-screen bg-black/70 backdrop-blur-2xl z-50 flex items-center justify-center py-4 border-none "
                 >
                     <button
                         onClick={closeOverlay}
-                        className="absolute top-12 border bg-black border-white rounded-full md:right-18 right-8 text-white text-4xl z-50 cursor-pointer hover:bg-white hover:text-black hover:border-black transition-all duration-500 ease-in-out "
+                        className="absolute top-12 border bg-black border-white rounded-full md:right-18 right-5 text-white text-4xl z-50 cursor-pointer hover:bg-white hover:text-black hover:border-black transition-all duration-500 ease-in-out "
                         title="Cerrar"
                         aria-label="Cerrar modal"
                         type="button"
                     >
-                        <IoClose className="xl:size-12 lg:size-14 size-10 rounded-full p-2" />
+                        <IoClose className="xl:size-12 lg:size-14 size-11 rounded-full p-2" />
                     </button>
 
                     <Suspense fallback={<div className="text-white">Cargando galería...</div>}>

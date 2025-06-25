@@ -40,7 +40,7 @@ export default function Inicio() {
                         </button>
                     </div>
                     <picture className="flex-1 h-full">
-                        <ImagenOptimizada url={IMAGENEVENTO} alt={"Imagen de un evento"} clases="mt-0 rounded-none w-screen md:w-full  h-[50dvh] xl:h-screen object-center object-cover" />
+                        <ImagenOptimizada url={IMAGENEVENTO} alt={"Imagen de un evento"} clases="mt-0 rounded-none w-screen md:w-full  h-[50vh] xl:h-screen object-center object-cover" />
                     </picture>
                 </section>
             </div >

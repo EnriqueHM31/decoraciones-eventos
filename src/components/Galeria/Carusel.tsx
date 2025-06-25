@@ -30,11 +30,11 @@ export default function Carrusel({ images }: CarruselProps) {
                     </button>
                 )
             }
-            <div className="relative w-screen md:h-11/12 h-screen md:justify-center flex items-center flex-col py-4 mx-auto overflow-hidden justify-center md:max-w-3/4 border-none  }">
+            <div className="relative w-screen md:h-10/12 h-screen md:justify-center flex items-center flex-col py-4 mx-auto overflow-hidden justify-center md:max-w-3/4 border-none ">
 
                 <div className="w-full h-10/12 flex items-center justify-center">
 
-                    <div className="fixed top-12 left-8 border border-white bg-primary text-white px-4 py-2 rounded-2xl z-50 flex gap-2 items-center justify-center md:hidden  ">
+                    <div className="fixed top-14 left-5 border border-white bg-primary text-white px-5 py-1 rounded-2xl z-50 flex gap-2 items-center justify-center md:hidden  ">
                         <p>{current + 1} de {images.length}</p>
                     </div>
 
@@ -49,7 +49,7 @@ export default function Carrusel({ images }: CarruselProps) {
                         Enviar Mensaje
                     </button>
                     <div
-                        className={`flex transition-transform h-3/4 w-full  md:max-h-full md:w-full md:h-full  duration-500 ease-in-out flex-1 ${images.length === 1 ? "justify-center" : ""}`}
+                        className={`flex transition-transform h-3/4 py-10 md:py-0 w-full  md:max-h-full md:w-full md:h-full  duration-500 ease-in-out flex-1 ${images.length === 1 ? "justify-center" : ""}  `}
                         style={{ transform: `translateX(-${current * 100}%)` }}
                         onTouchStart={handleTouchStart}
                         onTouchMove={handleTouchMove}
