@@ -33,6 +33,7 @@ export default function ItemGaleria({ images, styles, key }: ImageOverlayGallery
                     className={` object-cover object-center cursor-pointer w-full h-full ${styles ?? ""}`}
                     whileTap={{ scale: 0.95 }}
                     layoutId={`imagen-${images[0]}`}
+
                 />
             </div>
 

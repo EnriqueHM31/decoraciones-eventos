@@ -15,6 +15,8 @@ export default function ImagenOptimizada({ url, alt, clases }: ImagenOptimizadaP
             className={clases}
             aria-label={alt}
             title={alt}
+            crossOrigin="anonymous"
+
         />
     );
 }
