@@ -22,7 +22,8 @@ export default function CardAnimacion({ galeriaImagenes, index, isLazy }: Imagen
                 <ItemGaleria
                     images={galeriaImagenes.imagenes}
                     styles="h-full w-full"
-                    lazy={isLazy ?? "eager"}
+                    lazy={isLazy}
+                    key={index}
                 />
             </motion.div>
         </>

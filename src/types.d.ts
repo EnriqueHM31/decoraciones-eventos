@@ -30,9 +30,10 @@ export interface ImageOverlayGalleryProps {
     images: string[];
     styles?: string;
     lazy?: boolean;
+    key?: number;
 }
 
-export interface AltaresJsonProps {
+export interface AltarenumberJsonProps {
     altares: Array<{
         id: number;
         imagenes: string[];
