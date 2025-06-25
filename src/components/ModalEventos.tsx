@@ -1,6 +1,5 @@
 import { SECCIONES_EVENTOS } from "@/assets/ts/constantes";
 import { IoClose } from "react-icons/io5"
-import ImagenOptimizada from "./Galeria/ImagenOptimizada";
 
 
 export default function ModalEventos({ handleViewEventos }: { handleViewEventos: () => void }) {
