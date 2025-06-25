@@ -1,4 +1,3 @@
-import { useEffect, useMemo, useState } from "react";
 import SinImagenes from "./Galeria/SinImagenes";
 import ZonaFiltros from "./Filtros/ZonaFiltros";
 import { useGaleria } from "@/hooks/useGaleria";

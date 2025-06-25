@@ -10,7 +10,7 @@ export default function AreasPrincipales() {
 
             <Navegacion />
 
-            <section className="flex flex-col items-center justify-center gap-1 md:gap-7 py-2 px-2 w-full ">
+            <section className="flex flex-col items-center justify-center gap-1 md:gap-7 py-8 md:py-10 px-2 w-full ">
                 <GaleriaImagenes MOOKS={AREASPRINCIPALESJSON} tipo="areas-principales" />
             </section>
 
