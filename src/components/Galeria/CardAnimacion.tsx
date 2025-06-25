@@ -15,7 +15,6 @@ export default function CardAnimacion({ galeriaImagenes, index, isLazy }: Imagen
                 transition={{
                     duration: 0.3,
                     ease: "easeOut",
-                    delay: index * 0.1,
                 }}
                 viewport={{ once: true, amount: 0.3 }}
                 className={`w-full rounded-lg overflow-hidden object-cover  h-52`}

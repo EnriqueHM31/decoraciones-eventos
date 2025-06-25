@@ -5,7 +5,7 @@ import { useSliderImagenes } from "@/hooks/useSliderImagenes";
 import { IoClose } from "react-icons/io5";
 const Carrusel = lazy(() => import("@/components/Galeria/Carusel"));
 
-export default function ItemGaleria({ lazy, images, styles }: ImageOverlayGalleryProps) {
+export default function ItemGaleria({ images, styles }: ImageOverlayGalleryProps) {
     const {
         selectedImage,
         handleImageSelected,
@@ -26,7 +26,6 @@ export default function ItemGaleria({ lazy, images, styles }: ImageOverlayGaller
                         setCurrentIndex(0);
                         handleImageSelected(images[0], 0);
                     }}
-                    loading={lazy ? "lazy" : undefined}
                     crossOrigin="anonymous"
                     width={400}
                     height={400}
